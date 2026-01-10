@@ -63,7 +63,4 @@ ${routes
   });
 };
 
-// Export empty component - loader handles the response
-export default function Sitemap() {
-  return null;
-}
+// No default export needed - loader handles the response directly

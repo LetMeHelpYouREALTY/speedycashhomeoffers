@@ -121,6 +121,73 @@ Allow: /`;
       });
     }
 
+    // Handle sitemap.xml early - return XML response immediately (before any other processing)
+    // Handle both /sitemap.xml and /sitemap.xml/ (with trailing slash)
+    if (pathname === "/sitemap.xml" || pathname === "/sitemap.xml/") {
+      const baseUrl = "https://www.speedycashhomeoffers.com";
+      const currentDate = new Date().toISOString().split("T")[0];
+      const recentUpdate = currentDate;
+      const stableDate = "2025-01-15";
+
+      const routes = [
+        { url: "/", priority: "1.0", changefreq: "weekly", lastmod: recentUpdate },
+        { url: "/process", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/testimonials", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/meet-the-team", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/faqs", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/blog", priority: "0.8", changefreq: "weekly", lastmod: recentUpdate },
+        { url: "/market-insights", priority: "0.8", changefreq: "weekly", lastmod: recentUpdate },
+        { url: "/contact", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/thank-you", priority: "0.6", changefreq: "yearly", lastmod: stableDate },
+        { url: "/sell-my-house-fast-las-vegas", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sell-my-house-fast-southern-california", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sell-my-house-fast-orange-county", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sell-my-house-fast-san-diego", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sell-my-house-fast-riverside", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sell-my-house-fast-inland-empire", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/sellers", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/expired-listing", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/buyers", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/investors", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/neighborhoods", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/about", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/privacy-policy", priority: "0.5", changefreq: "yearly", lastmod: stableDate },
+        { url: "/terms-of-service", priority: "0.5", changefreq: "yearly", lastmod: stableDate },
+        { url: "/company-history", priority: "0.6", changefreq: "monthly", lastmod: stableDate },
+        { url: "/fast-home-cash-offers-usa", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/fast-home-cash-offers-reviews", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/fast-home-cash-offers-near-me", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/fast-home-cash-offers-las-vegas", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/opendoor-cash-offer", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/fast-home-offer", priority: "0.8", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/fast-home-cash-offers-nevada", priority: "0.9", changefreq: "monthly", lastmod: recentUpdate },
+        { url: "/zillow-cash-offer", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
+      ];
+
+      const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${routes
+  .map(
+    (route) => `  <url>
+    <loc>${baseUrl}${route.url}</loc>
+    <lastmod>${route.lastmod}</lastmod>
+    <changefreq>${route.changefreq}</changefreq>
+    <priority>${route.priority}</priority>
+  </url>`
+  )
+  .join("\n")}
+</urlset>`;
+
+      throw new Response(sitemapXml, {
+        status: 200,
+        headers: {
+          "Content-Type": "application/xml; charset=utf-8",
+          "Cache-Control": "public, max-age=3600, s-maxage=3600",
+          "X-Content-Type-Options": "nosniff",
+        },
+      });
+    }
+
     // Normalize pathname for comparison (remove trailing slash)
     const normalizedPath =
       pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
