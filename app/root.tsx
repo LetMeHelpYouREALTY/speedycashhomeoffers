@@ -49,11 +49,12 @@ export const loader = async ({ request }: { request: Request }) => {
     const url = new URL(request.url);
     const searchParams = url.searchParams;
 
-    // Get pathname early for all checks
-    const pathname = url.pathname.toLowerCase();
+    // Get pathname early for all checks (preserve original for exact matching)
+    const originalPathname = url.pathname;
+    const pathname = originalPathname.toLowerCase();
 
     // Handle robots.txt early - return plain text response immediately (before any other processing)
-    if (pathname === "/robots.txt") {
+    if (pathname === "/robots.txt" || originalPathname === "/robots.txt") {
       const baseUrl = "https://www.speedycashhomeoffers.com";
       const robotsTxt = `User-agent: *
 Allow: /
@@ -122,8 +123,8 @@ Allow: /`;
     }
 
     // Handle sitemap.xml early - return XML response immediately (before any other processing)
-    // Handle both /sitemap.xml and /sitemap.xml/ (with trailing slash)
-    if (pathname === "/sitemap.xml" || pathname === "/sitemap.xml/") {
+    // Handle /sitemap.xml with or without trailing slash, case-insensitive
+    if (pathname === "/sitemap.xml" || pathname === "/sitemap.xml/" || originalPathname === "/sitemap.xml" || originalPathname === "/sitemap.xml/") {
       const baseUrl = "https://www.speedycashhomeoffers.com";
       const currentDate = new Date().toISOString().split("T")[0];
       const recentUpdate = currentDate;
