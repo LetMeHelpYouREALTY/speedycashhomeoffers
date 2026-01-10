@@ -487,6 +487,127 @@ export default function MeetTheTeam() {
         </div>
       </section>
 
+      {/* Team Values and Approach Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Our Team's Values and Approach
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Customer-First Philosophy
+              </h3>
+              <p className="text-gray-600 mb-4">
+                At Speedy Cash Home Offers, our team operates under a customer-first philosophy that
+                prioritizes your needs, timeline, and financial goals above all else. We understand
+                that selling a home is often one of life's most significant financial decisions, and
+                we approach every transaction with the respect, professionalism, and care it
+                deserves.
+              </p>
+              <p className="text-gray-600 mb-4">
+                This philosophy means we take time to understand your unique situation, whether
+                you're facing foreclosure, dealing with an inherited property, relocating for work,
+                or simply wanting to sell quickly without the traditional real estate hassles. We
+                tailor our approach to meet your specific needs, not a one-size-fits-all process.
+              </p>
+              <p className="text-gray-600">
+                Our team members are trained to listen carefully, ask the right questions, and
+                provide honest, transparent communication throughout the entire process. We believe
+                that informed homeowners make better decisions, so we ensure you understand every
+                aspect of our offer and process before you commit.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Ethical Business Practices
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Janet Duffy has built Speedy Cash Home Offers on a foundation of ethical
+                business practices, transparency, and integrity. Our A+ Better Business Bureau
+                rating reflects our commitment to these values and our track record of treating
+                homeowners fairly and respectfully.
+              </p>
+              <p className="text-gray-600 mb-4">
+                We believe that ethical business practices benefit everyone - homeowners receive fair
+                treatment and honest offers, and we build long-term relationships based on trust and
+                respect. This approach has allowed us to help thousands of homeowners while
+                maintaining our reputation as Las Vegas's most trusted cash home buyers.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Continuous Improvement and Education
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our team is committed to continuous improvement and ongoing education. We stay
+                current with real estate market trends, legal requirements, and industry best
+                practices to ensure we provide the best possible service to homeowners.
+              </p>
+              <p className="text-gray-600">
+                This commitment to learning means we can adapt to changing market conditions, new
+                regulations, and evolving homeowner needs. Whether it's understanding new
+                foreclosure prevention programs, probate requirements, or market valuation
+                methodologies, our team invests in the knowledge needed to serve you effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Our Team Makes a Difference Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Why Our Team Makes a Difference
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8">
+              The team at Speedy Cash Home Offers brings together decades of combined real estate
+              experience, local market knowledge, and a genuine commitment to helping homeowners.
+              This combination of expertise and compassion sets us apart from other cash home buyers
+              and ensures you receive exceptional service throughout your transaction.
+            </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                  Local Market Expertise
+                </h3>
+                <p className="text-gray-600">
+                  Our team's deep knowledge of the Las Vegas and Southern California real estate
+                  markets means we can provide more accurate valuations and fairer offers than
+                  out-of-state investors or general real estate companies. We understand neighborhood
+                  trends, property values, and market dynamics that affect your home's worth, allowing
+                  us to make offers that reflect true market value.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                  Experience with Complex Situations
+                </h3>
+                <p className="text-gray-600">
+                  Over the years, our team has handled virtually every type of property sale
+                  situation - from straightforward sales to complex scenarios involving probate,
+                  foreclosure, divorce, inherited properties, and distressed real estate. This
+                  experience means we can navigate challenges that might stall or derail traditional
+                  sales, finding solutions that help you move forward.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                  Streamlined Process Efficiency
+                </h3>
+                <p className="text-gray-600">
+                  Our team has refined our cash home buying process over thousands of transactions,
+                  creating a streamlined system that eliminates unnecessary steps while ensuring
+                  nothing important is overlooked. This efficiency means faster closings, less
+                  paperwork for you, and a smoother overall experience compared to traditional real
+                  estate sales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 bg-indigo-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -567,25 +567,126 @@ export default function About() {
         </div>
       </section>
 
-      {/* Featured Properties */}
+      {/* Professional Background Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
-            Find Your Perfect Property
-          </h1>
-          <h2 className="text-2xl font-semibold text-center mb-12 text-gray-700">
-            Featured Properties
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Dr. Janet Duffy's Professional Background and Expertise
           </h2>
-          <div className="text-center">
-            <p className="text-gray-600 mb-6">
-              Browse our available properties or contact us for personalized property search assistance.
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Education and Credentials
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Janet Duffy holds a Ph.D. in Real Estate Economics, providing her with deep
+                theoretical knowledge and analytical skills that complement her extensive practical
+                experience. This advanced education enables her to understand complex market dynamics,
+                property valuation methodologies, and economic factors that influence real estate
+                transactions.
+              </p>
+              <p className="text-gray-600 mb-4">
+                In addition to her doctoral degree, Dr. Duffy is a licensed real estate broker in
+                Nevada, maintaining all required continuing education and professional development
+                requirements. Her commitment to ongoing education ensures she stays current with
+                industry best practices, legal requirements, and market trends that affect Las Vegas
+                and Southern California real estate markets.
+              </p>
+              <p className="text-gray-600">
+                Her combination of advanced academic credentials and hands-on experience gives her a
+                unique perspective on real estate transactions, allowing her to provide insights and
+                solutions that other cash home buyers might miss. This expertise directly benefits
+                homeowners through more accurate valuations and fairer offers.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                25+ Years of Las Vegas Real Estate Experience
+              </h3>
+              <p className="text-gray-600 mb-4">
+                With over 25 years of experience specifically in the Las Vegas real estate market,
+                Dr. Janet Duffy has witnessed and navigated multiple market cycles, economic
+                fluctuations, and neighborhood transformations. This long-term perspective allows her to
+                understand not just current market conditions, but also how neighborhoods and
+                property values have evolved over time.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Her experience spans various property types, from single-family homes and condos to
+                investment properties and distressed real estate. She's helped thousands of
+                homeowners sell properties in situations ranging from routine sales to complex
+                scenarios involving foreclosures, probate, divorce, and inherited properties.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Specialization in Distressed Properties
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Duffy has developed particular expertise in distressed properties, which are
+                properties that need significant repairs, have structural issues, or are in
+                foreclosure situations. Her experience with these challenging properties means she can
+                accurately assess repair costs, renovation needs, and market potential, allowing her
+                to make fair offers that account for all factors.
+              </p>
+              <p className="text-gray-600">
+                This specialization is especially valuable for homeowners dealing with properties
+                that traditional buyers might avoid. Whether your property has fire damage, water
+                damage, structural issues, or simply needs extensive updating, Dr. Duffy's
+                experience allows her to provide solutions that help you move forward quickly and
+                fairly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Involvement Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Community Involvement and Professional Recognition
+          </h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 mb-8">
+              Dr. Janet Duffy's commitment to excellence extends beyond individual transactions to
+              active involvement in the Las Vegas business community and professional organizations.
+              Her participation in these groups reflects her dedication to maintaining high
+              standards and staying connected with industry developments.
             </p>
-            <a
-              href="/contact"
-              className="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors"
-            >
-              View Available Properties
-            </a>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                  Better Business Bureau A+ Rating
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Speedy Cash Home Offers maintains an A+ rating with the Better Business Bureau,
+                  reflecting our commitment to ethical business practices, customer satisfaction, and
+                  transparent transactions. This rating is earned through consistent positive customer
+                  experiences and resolution of any concerns that arise.
+                </p>
+                <p className="text-gray-600">
+                  The A+ BBB rating provides homeowners with confidence that they're working with a
+                  reputable, trustworthy company that prioritizes their interests. This recognition
+                  reflects Dr. Duffy's commitment to building a business based on integrity,
+                  transparency, and customer satisfaction.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                  Las Vegas Chamber of Commerce Membership
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  As a member of the Las Vegas Chamber of Commerce, Dr. Duffy is actively involved in
+                  supporting the local business community and contributing to economic development in
+                  the Las Vegas area. This involvement demonstrates her commitment to the long-term
+                  health and growth of the Las Vegas economy.
+                </p>
+                <p className="text-gray-600">
+                  Chamber membership also provides opportunities for networking, professional
+                  development, and staying informed about local business trends and opportunities.
+                  This engagement helps Dr. Duffy maintain connections that benefit her clients and
+                  stay current with local market developments.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

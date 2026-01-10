@@ -265,6 +265,137 @@ export default function CompanyHistory() {
         </div>
       </section>
 
+      {/* Impact and Milestones Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Our Impact and Key Milestones
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Helping Homeowners Across Multiple Markets
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Since our founding in 2015, Speedy Cash Home Offers has helped thousands of
+                homeowners across Las Vegas and Southern California sell their properties quickly
+                and fairly. Our focus on distressed properties, inherited homes, and time-sensitive
+                situations has made us a trusted partner for homeowners facing unique challenges.
+              </p>
+              <p className="text-gray-600 mb-4">
+                We've successfully closed thousands of transactions, helping families avoid
+                foreclosure, settle estates, relocate for job opportunities, and navigate difficult
+                life transitions. Our track record of fast closings, fair offers, and exceptional
+                service has earned us recognition as Las Vegas's most trusted cash home buyers.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Specialized Focus on North and East Las Vegas
+              </h3>
+              <p className="text-gray-600">
+                Our specialized focus on North Las Vegas and East Las Vegas neighborhoods (zip codes
+                89031, 89032, 89110, 89142) has allowed us to develop deep local market knowledge.
+                This specialization benefits homeowners by ensuring they receive offers that reflect
+                true market value, not generic estimates that might undervalue their property.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Recognition and Awards
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our commitment to excellence has earned us an A+ rating from the Better Business
+                Bureau, reflecting our dedication to ethical business practices and customer
+                satisfaction. We maintain a 4.9/5 star rating across review platforms, with over
+                500 positive reviews from satisfied homeowners who have sold their properties to us.
+              </p>
+              <p className="text-gray-600 mb-4">
+                These ratings and reviews reflect not just our service quality, but also our
+                commitment to transparency, fairness, and treating every homeowner with respect and
+                compassion. We're proud of our reputation and work hard every day to maintain it.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Future Vision and Growth
+              </h3>
+              <p className="text-gray-600">
+                Looking ahead, Speedy Cash Home Offers remains committed to Dr. Duffy's original
+                vision of making home selling simple, fast, and stress-free. We're continuously
+                improving our processes, expanding our market knowledge, and finding new ways to
+                serve homeowners better. As we grow, we'll always stay true to our core values of
+                transparency, speed, and compassion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth and Success Stories Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Our Growth Journey and Success Stories
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                From Startup to Market Leader
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Starting as a small operation in 2015, Speedy Cash Home Offers has grown into
+                Las Vegas's most trusted cash home buyers, serving thousands of homeowners across
+                Las Vegas and Southern California. Our growth has been driven by our commitment to
+                exceptional service, fair deals, and helping homeowners in difficult situations.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Our success is measured not just by the number of properties we've purchased, but
+                by the positive impact we've had on homeowners' lives. We've helped families avoid
+                foreclosure, settle estates, relocate for job opportunities, and navigate difficult
+                life transitions. These success stories are what motivate us to continue improving
+                our services and expanding our reach.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Building Trust Through Transparency
+              </h3>
+              <p className="text-gray-600">
+                From the beginning, Dr. Janet Duffy established transparency as a core value. This
+                commitment to honesty, fairness, and clear communication has been a key factor in
+                our growth and success. Homeowners trust us because they know we'll be upfront
+                about our offers, processes, and timelines. This trust has led to repeat business,
+                referrals, and our reputation as Las Vegas's most trusted cash home buyers.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Expanding Our Service Area
+              </h3>
+              <p className="text-gray-600 mb-4">
+                While maintaining our specialized focus on North Las Vegas and East Las Vegas
+                neighborhoods, we've expanded our services to cover all of Las Vegas and Southern
+                California. This expansion has allowed us to help homeowners in Orange County, San
+                Diego, Riverside, Inland Empire, and Los Angeles County, providing cash home buying
+                services across multiple markets.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Our expansion has been strategic, focusing on markets where homeowners need cash
+                home buying services and where we can leverage Dr. Duffy's expertise to provide
+                value. This dual-market knowledge (Las Vegas and Southern California) allows us to
+                serve homeowners who are relocating between these markets, providing seamless
+                service during transitions.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Innovation in Cash Home Buying
+              </h3>
+              <p className="text-gray-600">
+                Throughout our history, we've continuously innovated our processes to provide better
+                service to homeowners. This includes streamlining our evaluation process, improving
+                our market analysis methods, developing faster closing procedures, and creating more
+                flexible timelines. Our Cash Offer+ program for expired listings is just one
+                example of how we've evolved to meet homeowners' changing needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

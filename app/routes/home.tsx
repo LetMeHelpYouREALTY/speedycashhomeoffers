@@ -1163,6 +1163,140 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Las Vegas Market Expertise Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Las Vegas Cash Home Buying Expertise
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Specialized Focus on North and East Las Vegas
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Speedy Cash Home Offers specializes in North Las Vegas and East Las Vegas
+                neighborhoods, with particular expertise in zip codes 89031, 89032, 89110, and 89142.
+                These areas represent some of Las Vegas's most dynamic real estate markets, with
+                properties ranging from $300,000 to $450,000. Our deep local knowledge allows us to
+                make more accurate valuations and provide fairer cash offers than general real estate
+                investors.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Dr. Janet Duffy's 25+ years of experience in the Las Vegas real estate market means
+                she understands neighborhood trends, property values, and market dynamics specific to
+                these areas. This specialization benefits homeowners by ensuring they receive offers
+                that reflect true market value, not generic estimates that might undervalue their
+                property.
+              </p>
+              <p className="text-gray-600">
+                Whether you own a distressed property in North Las Vegas that needs significant
+                repairs, an inherited home in East Las Vegas that requires updating, or any property
+                in these focus areas, we have the local expertise to provide fair, competitive cash
+                offers that reflect your property's true value in today's market.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Understanding Distressed Properties in Las Vegas
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Distressed properties in Las Vegas face unique challenges, from desert climate
+                maintenance issues to market fluctuations. We understand these challenges and can make
+                fair offers on properties that traditional buyers might avoid. Whether your property
+                has structural issues, needs major renovations, or has been damaged by fire, water, or
+                natural disasters, we've seen it all and can provide solutions.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Our experience with distressed properties means we can accurately assess repair costs,
+                renovation needs, and market potential. This allows us to make offers that account for
+                all factors while still providing you with a fair return. You don't have to invest
+                thousands in repairs before selling - we handle that after purchase, allowing you to
+                move forward immediately.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                California to Las Vegas Relocation Services
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Many California homeowners are choosing to relocate to Las Vegas for its lower cost of
+                living, no state income tax, and growing job opportunities. If you're a California
+                homeowner looking to make this transition, Speedy Cash Home Offers can help you sell
+                your California property quickly and efficiently, providing the bridge you need to
+                relocate to Las Vegas.
+              </p>
+              <p className="text-gray-600">
+                We understand the challenges of managing a property sale from afar, especially when
+                you're already focused on your new Las Vegas life. Our streamlined cash buying process
+                eliminates the need for multiple showings, staging, or property management from
+                California. We can close quickly, giving you the funds you need to complete your
+                relocation and settle into your new Las Vegas home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Benefits Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            The Speedy Cash Home Offers Advantage
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                No Traditional Real Estate Hassles
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Traditional home sales require finding a real estate agent, staging your home,
+                scheduling showings, negotiating with buyers, and waiting for financing approval. Each
+                step can take weeks or months, and any delay can derail the entire process.
+              </p>
+              <p className="text-gray-600">
+                With Speedy Cash Home Offers, you skip all of this. We make our offer based on your
+                property information and a quick walkthrough. No staging, no showings, no waiting for
+                buyer financing. You simply accept our offer, choose your closing date, and receive
+                your cash payment.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Immediate Financial Relief
+              </h3>
+              <p className="text-gray-600 mb-4">
+                If you're facing foreclosure, behind on mortgage payments, or dealing with any
+                financial hardship, waiting months for a traditional sale isn't an option. Our cash
+                buying process can close in as little as 7 days, providing immediate financial relief
+                and helping you avoid the devastating impact of foreclosure on your credit.
+              </p>
+              <p className="text-gray-600">
+                We can also provide cash advances up to $20,000 to help you with immediate expenses
+                while the sale is processing. This flexibility is especially valuable when you're
+                dealing with time-sensitive financial situations or need funds for relocation,
+                repairs, or other urgent expenses.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Transparent and Fair Process
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Dr. Janet Duffy believes in complete transparency throughout the cash home buying
+                process. You'll receive a detailed explanation of how we arrived at our offer,
+                including market analysis, property condition assessment, and any factors that
+                influenced the valuation.
+              </p>
+              <p className="text-gray-600">
+                There are no hidden fees, no surprise costs, and no last-minute changes to the offer.
+                The amount we quote is the amount you'll receive, minus any existing liens or
+                mortgages you choose to pay off. This transparency ensures you can make an informed
+                decision with confidence, knowing exactly what to expect throughout the process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Pages */}
       <RelatedPages currentPage="home" />
 

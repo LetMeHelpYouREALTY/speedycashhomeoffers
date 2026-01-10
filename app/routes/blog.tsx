@@ -595,6 +595,75 @@ export default function Blog() {
         </div>
       </section>
 
+      {/* Blog Topics and Value Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Comprehensive Real Estate Topics and Home Selling Guides
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Essential Home Selling Topics
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our real estate blog covers essential topics that every homeowner should understand
+                when selling their property. From understanding the cash home buying process to
+                navigating foreclosure situations, we provide comprehensive guides that help you make
+                informed decisions about your property sale.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Topics include selling houses as-is, dealing with inherited properties, handling
+                probate situations, understanding escrow processes, and navigating landlord-tenant
+                challenges. We also cover home repair considerations, mold remediation, and property
+                condition issues that might affect your sale.
+              </p>
+              <p className="text-gray-600">
+                Whether you're selling a traditional home, a distressed property, an inherited
+                property, or an investment property, our blog provides the knowledge you need to
+                understand your options and make the best decision for your situation. Our articles
+                are written from the perspective of experienced real estate professionals who have
+                helped thousands of homeowners sell their properties successfully.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Las Vegas and Southern California Market Insights
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Stay informed about real estate market trends and conditions in Las Vegas and
+                Southern California. Our blog provides regular updates on market dynamics, property
+                values, neighborhood trends, and economic factors that influence real estate
+                transactions in these markets.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Understanding market conditions is crucial when selling your home, as it helps you
+                set realistic expectations and make informed decisions about pricing, timing, and
+                sale method. Our market insights articles analyze current trends, predict future
+                movements, and provide context for understanding how market conditions affect your
+                property's value.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Avoiding Common Home Selling Mistakes
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Learn from the mistakes of others and avoid costly errors that can delay or derail
+                your home sale. Our blog identifies common pitfalls in traditional home sales,
+                including pricing mistakes, staging errors, inspection issues, and financing
+                problems that cause deals to fall through.
+              </p>
+              <p className="text-gray-600">
+                We also provide guidance on choosing the right sale method for your situation,
+                whether that's traditional listing, cash sale, or our Cash Offer+ program for
+                expired listings. Understanding the pros and cons of each approach helps you select
+                the method that best meets your timeline, financial goals, and personal
+                circumstances.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-16 bg-pink-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

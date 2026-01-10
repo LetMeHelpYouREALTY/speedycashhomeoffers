@@ -235,12 +235,12 @@ export default function Investors() {
       {/* Property Search */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-6 text-gray-900">
             Find Investment Properties
-          </h1>
-          <h2 className="text-2xl font-semibold text-center mb-12 text-gray-700">
-            Search for Investment Opportunities
           </h2>
+          <h3 className="text-2xl font-semibold text-center mb-12 text-gray-700">
+            Search for Investment Opportunities
+          </h3>
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-600 mb-6">
               Contact us to explore investment opportunities in your area.
@@ -258,12 +258,12 @@ export default function Investors() {
       {/* Investment Properties */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-6 text-gray-900">
             Current Investment Opportunities
-          </h1>
-          <h2 className="text-2xl font-semibold text-center mb-12 text-gray-700">
-            Featured Investment Properties
           </h2>
+          <h3 className="text-2xl font-semibold text-center mb-12 text-gray-700">
+            Featured Investment Properties
+          </h3>
           <div className="text-center">
             <p className="text-gray-600 mb-6">
               Browse our current investment opportunities or contact us for personalized investment property search.

@@ -591,15 +591,78 @@ export default function SellMyHouseFastSanDiego() {
         </div>
       </section>
 
+      {/* San Diego Market Insights Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            Understanding the San Diego Real Estate Market
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                San Diego Market Dynamics
+              </h3>
+              <p className="text-gray-600 mb-4">
+                San Diego's real estate market is one of California's most desirable, with property
+                values influenced by coastal proximity, year-round pleasant weather, strong job
+                market, and excellent quality of life. Understanding these market dynamics is
+                crucial when selling your home, as property values can vary significantly between
+                different San Diego neighborhoods and communities.
+              </p>
+              <p className="text-gray-600 mb-4">
+                When you work with Speedy Cash Home Offers, you benefit from Dr. Janet Duffy's
+                expertise in both San Diego and Las Vegas markets. This dual-market knowledge
+                allows us to make fair cash offers that reflect true market value while providing
+                the speed and convenience that traditional sales can't match.
+              </p>
+              <p className="text-gray-600">
+                Whether you're selling in coastal communities, inland neighborhoods, or suburban
+                areas, we understand local market conditions and can provide competitive cash offers
+                that help you move forward quickly and efficiently.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                Why Choose Cash Home Buyers in San Diego
+              </h3>
+              <p className="text-gray-600 mb-4">
+                San Diego homeowners often choose cash home buyers when they need to sell quickly,
+                want to avoid the traditional real estate process, or have properties that need
+                significant repairs or updates. Cash buyers can close in as little as 7 days,
+                providing immediate access to your equity without waiting for buyer financing
+                approval or dealing with inspection contingencies.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Additionally, cash home buyers accept properties in any condition, which is
+                especially valuable in San Diego where many homes may need updates to meet current
+                market expectations. You don't have to invest thousands in renovations before
+                selling - we handle that after purchase, allowing you to move forward immediately.
+              </p>
+              <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
+                Relocating from San Diego to Las Vegas
+              </h3>
+              <p className="text-gray-600">
+                Many San Diego homeowners are choosing to relocate to Las Vegas for its lower cost of
+                living, no state income tax, and growing job opportunities. If you're making this
+                transition, Speedy Cash Home Offers can help you sell your San Diego property
+                quickly and efficiently, providing the bridge you need to complete your relocation.
+                Our streamlined process eliminates the need to manage property showings or maintenance
+                from Las Vegas, making your transition smoother and less stressful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Properties */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-6 text-gray-900">
             Find Your Perfect Property in San Diego
-          </h1>
-          <h2 className="text-2xl font-semibold text-center mb-12 text-gray-700">
-            Featured Properties in San Diego
           </h2>
+          <h3 className="text-2xl font-semibold text-center mb-12 text-gray-700">
+            Featured Properties in San Diego
+          </h3>
           <div className="text-center">
             <p className="text-gray-600 mb-6">
               Browse our available properties in San Diego or contact us for personalized property search assistance.
