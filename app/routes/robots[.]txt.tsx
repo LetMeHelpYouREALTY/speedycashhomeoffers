@@ -18,6 +18,17 @@ Disallow: /wp-*
 Disallow: /*/feed/
 Disallow: /*/feed
 
+# Note: Old WordPress paths and blog posts return 410 Gone (permanently removed)
+# - Old WordPress paths like /buyer-investor, /map return 410 Gone immediately
+# - Old WordPress blog posts (WordPress-style slugs) return 410 Gone immediately
+# - This happens BEFORE query parameter processing, so even URLs with query params return 410
+
+# Note: Problematic query parameters are automatically stripped and redirected (301 permanent)
+# - WordPress cron URLs (?doing_wp_cron=...) redirect to clean URLs (only for valid routes)
+# - AMP URLs (?amp=1) redirect to canonical versions (only for valid routes)
+# - Search query parameters (?q=, ?noamp=) redirect to clean URLs (only for valid routes)
+# These redirects happen before any page rendering, ensuring proper canonicalization
+
 # Disallow admin or sensitive areas (if any exist in the future)
 # Disallow: /admin/
 # Disallow: /private/

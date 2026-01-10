@@ -61,6 +61,7 @@ export default function Sellers() {
               "Get a fast, fair cash offer for your Las Vegas home. No repairs, no fees, no waiting. Close in as little as 7 days.",
             provider: {
               "@type": "LocalBusiness",
+              "@id": "https://www.speedycashhomeoffers.com/#organization",
               name: "Speedy Cash Home Offers | Homes by Dr. Jan Duffy",
               telephone: "(702) 500-1981",
               email: "DrDuffy@SpeedyCashHomeOffers.com",
@@ -71,6 +72,13 @@ export default function Sellers() {
                 addressRegion: "NV",
                 postalCode: "89156",
                 addressCountry: "US",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "500",
+                bestRating: "5",
+                worstRating: "1",
               },
             },
             serviceType: "Cash Home Buying",
@@ -93,13 +101,6 @@ export default function Sellers() {
               description:
                 "Fast cash offers with no repairs needed, no fees, and closing in as little as 7 days",
               priceRange: "$300000-$450000",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "500",
-              bestRating: "5",
-              worstRating: "1",
             },
           }),
         }}

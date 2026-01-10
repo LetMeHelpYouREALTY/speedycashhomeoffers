@@ -36,6 +36,7 @@ export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   // Load Google Fonts asynchronously to prevent render blocking
   // Using media="print" trick: browser loads it with low priority, then switches to "all"
+  // Added font-display=swap via URL parameter for faster text rendering
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
@@ -44,14 +45,88 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export const loader = async ({ request }: { request: Request }) => {
-  const url = new URL(request.url);
-  const searchParams = url.searchParams;
+  try {
+    const url = new URL(request.url);
+    const searchParams = url.searchParams;
 
-  // Get pathname early for all checks
-  const pathname = url.pathname.toLowerCase();
+    // Get pathname early for all checks
+    const pathname = url.pathname.toLowerCase();
 
-  // Define valid routes once for reuse
-  const validRoutes = [
+    // Handle robots.txt early - return plain text response immediately (before any other processing)
+    if (pathname === "/robots.txt") {
+      const baseUrl = "https://www.speedycashhomeoffers.com";
+      const robotsTxt = `User-agent: *
+Allow: /
+
+# Disallow old WordPress paths and non-existent routes
+Disallow: /buyer-investor/
+Disallow: /map/
+Disallow: /home/
+Disallow: /for-buyers/
+Disallow: /writer/
+Disallow: /author/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /__manifest
+Disallow: /wp-*
+Disallow: /*/feed/
+Disallow: /*/feed
+
+# Note: Old WordPress paths and blog posts return 410 Gone (permanently removed)
+# - Old WordPress paths like /buyer-investor, /map return 410 Gone immediately
+# - Old WordPress blog posts (WordPress-style slugs) return 410 Gone immediately
+# - This happens BEFORE query parameter processing, so even URLs with query params return 410
+
+# Note: Problematic query parameters are automatically stripped and redirected (301 permanent)
+# - WordPress cron URLs (?doing_wp_cron=...) redirect to clean URLs (only for valid routes)
+# - AMP URLs (?amp=1) redirect to canonical versions (only for valid routes)
+# - Search query parameters (?q=, ?noamp=) redirect to clean URLs (only for valid routes)
+# These redirects happen before any page rendering, ensuring proper canonicalization
+
+# Disallow admin or sensitive areas (if any exist in the future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap
+Sitemap: ${baseUrl}/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /`;
+
+      throw new Response(robotsTxt, {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=86400", // Cache for 24 hours
+        },
+      });
+    }
+
+    // Normalize pathname for comparison (remove trailing slash)
+    const normalizedPath =
+      pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
+
+    // Define valid routes early for validation checks
+    const validRoutes = [
     "/",
     "/process",
     "/testimonials",
@@ -66,6 +141,7 @@ export const loader = async ({ request }: { request: Request }) => {
     "/sell-my-house-fast-riverside",
     "/sell-my-house-fast-inland-empire",
     "/sellers",
+    "/expired-listing",
     "/buyers",
     "/investors",
     "/neighborhoods",
@@ -83,109 +159,250 @@ export const loader = async ({ request }: { request: Request }) => {
     "/fast-home-offer",
     "/fast-home-cash-offers-nevada",
     "/zillow-cash-offer",
-    "/robots.txt",
-    "/sitemap.xml",
-  ];
+      "/robots.txt",
+      "/sitemap.xml",
+    ];
 
-  // Normalize pathname for comparison (remove trailing slash)
-  const normalizedPath =
-    pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
-
-  // Check if path is a valid route first
-  const isValidRoute = validRoutes.some((route) => {
+    // Check if path is a valid route
+    const isValidRoute = validRoutes.some((route) => {
     if (route === "/") {
       return normalizedPath === "/" || normalizedPath === "";
     }
-    return normalizedPath === route || normalizedPath.startsWith(route + "/");
-  });
-
-  // Redirect HTTP to HTTPS (only for valid routes)
-  if (url.protocol === "http:") {
-    url.protocol = "https:";
-    throw new Response(null, {
-      status: 301,
-      headers: {
-        Location: url.toString(),
-      },
-    });
-  }
-
-  // Redirect non-www to www (only for valid routes)
-  if (url.hostname === "speedycashhomeoffers.com") {
-    url.hostname = "www.speedycashhomeoffers.com";
-    throw new Response(null, {
-      status: 301,
-      headers: {
-        Location: url.toString(),
-      },
-    });
-  }
-
-  // Only check for old WordPress paths if it's NOT a valid route
-  // Valid routes should always pass through to React Router
-  if (!isValidRoute) {
-    const oldWordPressPaths = [
-      "/buyer-investor",
-      "/map",
-      "/home",
-      "/for-buyers",
-      "/writer",
-      "/author",
-      "/tag",
-      "/category",
-      "/__manifest",
-    ];
-
-    // Check if pathname starts with any old WordPress path
-    // Use exact match or path prefix to avoid false positives
-    const isOldPath = oldWordPressPaths.some((path) => {
-      // Exact match
-      if (pathname === path) return true;
-      // Path prefix match (e.g., /writer/anything matches /writer)
-      if (pathname.startsWith(path + "/")) return true;
-      return false;
+      return normalizedPath === route || normalizedPath.startsWith(route + "/");
     });
 
-    if (isOldPath) {
-      throw new Response(null, {
-        status: 410,
-        statusText: "Gone",
-        headers: {
-          "X-Robots-Tag": "noindex, nofollow",
-          "X-WordPress-Content": "removed",
-        },
-      });
-    }
-  }
-
-  // Handle trailing slashes - redirect to non-trailing slash for all routes except root
-  // BUT: Only redirect if it's a valid route - invalid routes will hit the 404 handler
-  if (pathname.endsWith("/") && pathname !== "/") {
-    // Use the already-computed isValidRoute check, but check path without trailing slash
-    const pathWithoutSlash = pathname.slice(0, -1);
-    const isRouteWithoutSlash = validRoutes.some((route) => {
-      if (route === "/") {
-        return pathWithoutSlash === "/" || pathWithoutSlash === "";
+    // Redirect /home to / (homepage) - this should happen BEFORE old WordPress checks
+    // Handle both /home and /home/ (with trailing slash)
+    if (normalizedPath === "/home" || pathname === "/home" || pathname === "/home/") {
+      const homeUrl = new URL("/", url.origin);
+      // Redirect to www and HTTPS if needed
+      if (homeUrl.hostname === "speedycashhomeoffers.com") {
+        homeUrl.hostname = "www.speedycashhomeoffers.com";
       }
-      return pathWithoutSlash === route || pathWithoutSlash.startsWith(route + "/");
-    });
-
-    // Only redirect valid routes - let 404 handler deal with invalid paths
-    if (isRouteWithoutSlash) {
-      // Normal trailing slash redirect - strip all query params to prevent duplicates
-      const newPath = pathname.slice(0, -1);
-      const newUrl = new URL(newPath, url.origin);
+      if (homeUrl.protocol === "http:") {
+        homeUrl.protocol = "https:";
+      }
       throw new Response(null, {
         status: 301,
         headers: {
-          Location: newUrl.toString(),
+          Location: homeUrl.toString(),
+          "Cache-Control": "public, max-age=31536000, immutable",
         },
       });
     }
-    // If not a valid route, let it fall through to React Router which will hit the 404 handler
-  }
 
-  return {};
+    // Check for old WordPress paths BEFORE query parameter stripping
+    // This ensures old WordPress paths return 410 Gone immediately, even with query params
+    if (!isValidRoute) {
+      // Check old WordPress paths first (before blog post detection)
+      const oldWordPressPaths = [
+        "/buyer-investor",
+        "/map",
+        // Note: /home is handled separately above - redirects to / (homepage)
+        "/for-buyers",
+        "/writer",
+        "/author",
+        "/tag",
+        "/category",
+        "/__manifest",
+      ];
+
+      // Check if pathname starts with any old WordPress path (works with or without trailing slash)
+      // Check both normalizedPath (no trailing slash) and pathname (original) for maximum compatibility
+      const isOldPath = oldWordPressPaths.some((path) => {
+        // Exact match using normalized path (handles trailing slash)
+        if (normalizedPath === path) return true;
+        // Exact match using original pathname (covers both /path and /path/)
+        if (pathname === path || pathname === path + "/") return true;
+        // Path prefix match for subpaths (e.g., /writer/drjanduffy/ matches /writer)
+        // normalizedPath is already without trailing slash, so we can check directly
+        if (normalizedPath.startsWith(path + "/")) return true;
+        // Also check original pathname for subpaths (covers cases with trailing slashes)
+        if (pathname.startsWith(path + "/")) return true;
+        return false;
+      });
+
+      if (isOldPath) {
+        throw new Response(null, {
+          status: 410,
+          statusText: "Gone",
+          headers: {
+            "X-Robots-Tag": "noindex, nofollow",
+            "X-WordPress-Content": "removed",
+            "Cache-Control": "public, max-age=31536000, immutable",
+          },
+        });
+      }
+
+      // Check for old WordPress blog posts (after checking old paths)
+      // WordPress blog posts are typically single-segment paths with many dashes
+      const pathSegments = normalizedPath.split("/").filter((segment) => segment.length > 0);
+      if (pathSegments.length > 0 && pathSegments.length <= 2) {
+        // Check first segment (main slug) and second segment if exists (year/month in URL structure)
+        const firstSegment = pathSegments[0];
+        
+        // WordPress blog post patterns: starts with article/adjective/number words and has multiple dashes
+        // Expanded pattern to catch ALL WordPress post patterns including common starters
+        const wordPressBlogPostPattern =
+          /^(the|why|how|what|when|where|can|should|will|does|is|are|a|an|benefits|top|best|ultimate|complete|guide|tips|tricks|reasons|ways|things|facts|mistakes|secrets|strategies|methods|tools|resources|examples|case|study|reviews|comparison|vs|versus|difference|between|pros|cons|achieve|dream|homeownership|condos|townhomes|infographic|downsizing|retire|expert|quotes|forecast|housing|market|real|estate|agent|buy|sell|home|house|plan|go|you|use|should|new|these|avoid|if|2|3|4|5|6|7|8|9|10|1|2024|2023|2022|2021|2020|2025)-/i;
+        const hasMultipleDashes = firstSegment.split("-").length > 3;
+        const isLikelyWordPressPost = wordPressBlogPostPattern.test(firstSegment) && hasMultipleDashes;
+        
+        // Also check if slug starts with a number followed by dash (common WordPress format like "2-of-the-factors")
+        const startsWithNumber = /^\d+-/.test(firstSegment);
+
+        // Also check if it's a very long slug with many dashes (typical WordPress post format)
+        // WordPress posts often have 5+ dash-separated words (6+ segments)
+        // This catches posts that might not start with our known prefixes
+        const isVeryLongSlug = firstSegment.split("-").length > 5;
+        const isLikelyWordPressByLength = isVeryLongSlug;
+
+        // Additional check: if slug contains common WordPress post patterns (dates, years, common phrases)
+        const hasWordPressPatterns =
+          firstSegment.includes("-2024") ||
+          firstSegment.includes("-2023") ||
+          firstSegment.includes("-2022") ||
+          firstSegment.includes("-2021") ||
+          firstSegment.includes("-2020") ||
+          firstSegment.includes("-2025") ||
+          (firstSegment.includes("-on-") && firstSegment.includes("-the-")) ||
+          (firstSegment.includes("-of-") && hasMultipleDashes) ||
+          (firstSegment.includes("-to-") && firstSegment.includes("-the-")) ||
+          (firstSegment.includes("-in-") && firstSegment.includes("-the-")) ||
+          (firstSegment.includes("-for-") && hasMultipleDashes) ||
+          (firstSegment.includes("-your-") && hasMultipleDashes) ||
+          (firstSegment.includes("-about-") && hasMultipleDashes) ||
+          firstSegment.includes("-mortgage-") ||
+          firstSegment.includes("-rates-") ||
+          firstSegment.includes("-home-") ||
+          firstSegment.includes("-house-") ||
+          firstSegment.includes("-homes-") ||
+          firstSegment.includes("-selling-") ||
+          firstSegment.includes("-buying-");
+
+        // If any of these conditions match, it's a WordPress blog post
+        if (isLikelyWordPressPost || isLikelyWordPressByLength || hasWordPressPatterns || startsWithNumber) {
+          throw new Response(null, {
+            status: 410,
+            statusText: "Gone",
+            headers: {
+              "X-Robots-Tag": "noindex, nofollow",
+              "X-WordPress-Content": "removed",
+              "Cache-Control": "public, max-age=31536000, immutable",
+            },
+          });
+        }
+      }
+    }
+
+    // Strip problematic query parameters and redirect to clean URL (301 permanent)
+    // ONLY if NOT an old WordPress path (checked above)
+    // These query parameters should not be indexed - redirect to canonical URL without them
+    const problematicParams = ["doing_wp_cron", "amp", "q", "noamp"];
+    const hasProblematicParam = problematicParams.some((param) => searchParams.has(param));
+
+    if (hasProblematicParam) {
+      const cleanUrl = new URL(url.pathname, url.origin);
+      // Only preserve non-problematic query params (unlikely but safe)
+      for (const [key, value] of searchParams.entries()) {
+        if (!problematicParams.includes(key)) {
+          cleanUrl.searchParams.set(key, value);
+        }
+      }
+      // Redirect to www and HTTPS if needed
+      if (cleanUrl.hostname === "speedycashhomeoffers.com") {
+        cleanUrl.hostname = "www.speedycashhomeoffers.com";
+      }
+      if (cleanUrl.protocol === "http:") {
+        cleanUrl.protocol = "https:";
+      }
+      throw new Response(null, {
+        status: 301,
+        headers: {
+          Location: cleanUrl.toString(),
+          "Cache-Control": "public, max-age=31536000, immutable",
+          "X-Robots-Tag": "noindex, nofollow", // Prevent indexing during redirect
+        },
+      });
+    }
+
+    // Redirect HTTP to HTTPS (301 permanent redirect)
+    if (url.protocol === "http:") {
+      url.protocol = "https:";
+      throw new Response(null, {
+        status: 301,
+        headers: {
+          Location: url.toString(),
+          "Cache-Control": "public, max-age=31536000, immutable",
+        },
+      });
+    }
+
+    // Redirect non-www to www (301 permanent redirect)
+    if (url.hostname === "speedycashhomeoffers.com") {
+      url.hostname = "www.speedycashhomeoffers.com";
+      throw new Response(null, {
+        status: 301,
+        headers: {
+          Location: url.toString(),
+          "Cache-Control": "public, max-age=31536000, immutable",
+        },
+      });
+    }
+
+    // Handle trailing slashes - redirect to non-trailing slash for all routes except root
+    // BUT: Only redirect if it's a valid route - invalid routes will hit the 404 handler
+    if (pathname.endsWith("/") && pathname !== "/") {
+      // Use the already-computed isValidRoute check, but check path without trailing slash
+      const pathWithoutSlash = pathname.slice(0, -1);
+      const isRouteWithoutSlash = validRoutes.some((route) => {
+        if (route === "/") {
+          return pathWithoutSlash === "/" || pathWithoutSlash === "";
+        }
+        return pathWithoutSlash === route || pathWithoutSlash.startsWith(route + "/");
+      });
+
+      // Only redirect valid routes - let 404 handler deal with invalid paths
+      if (isRouteWithoutSlash) {
+        // Normal trailing slash redirect - preserve query params (already cleaned above)
+        const newPath = pathname.slice(0, -1);
+        const newUrl = new URL(newPath, url.origin);
+        // Preserve existing query params (after WordPress cron/amp removal above)
+        for (const [key, value] of url.searchParams.entries()) {
+          newUrl.searchParams.set(key, value);
+        }
+        throw new Response(null, {
+          status: 301,
+          headers: {
+            Location: newUrl.toString(),
+            "Cache-Control": "public, max-age=31536000, immutable",
+          },
+        });
+      }
+      // If not a valid route, let it fall through to React Router which will hit the 404 handler
+    }
+
+    return {};
+  } catch (error) {
+    // If there's any error in the loader, log it and return a proper 500 response
+    // This prevents unhandled errors from causing issues
+    console.error("Loader error:", error);
+
+    // If the error is already a Response (redirect/410/etc), re-throw it
+    if (error instanceof Response) {
+      throw error;
+    }
+
+    // Otherwise, return a proper 500 error response
+    throw new Response(null, {
+      status: 500,
+      statusText: "Internal Server Error",
+      headers: {
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-cache, no-store, must-revalidate",
+      },
+    });
+  }
 };
 
 // Set cache headers for HTML pages to prevent stale content
@@ -205,7 +422,7 @@ export default function App() {
         <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
         <Meta />
         <Links />
-        {/* Critical CSS: Minimal above-the-fold styles to prevent FOUC */}
+        {/* Critical CSS: Minimal above-the-fold styles to prevent FOUC and optimize LCP */}
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -219,8 +436,17 @@ export default function App() {
               .justify-between{justify-content:space-between}
               .h-16{height:4rem}
               .text-2xl{font-size:1.5rem;line-height:2rem}
+              .text-xl{font-size:1.25rem;line-height:1.75rem}
               .font-bold{font-weight:700}
               .text-blue-600{color:#2563eb}
+              /* Hero section styles for faster LCP rendering */
+              section.bg-gradient-to-r{background:linear-gradient(to right,#2563eb,#1e40af);min-height:20rem}
+              /* Trust badges section - prevent layout shift with explicit min-height */
+              .bg-gray-50.py-8{background-color:#f9fafb;padding-top:2rem;padding-bottom:2rem;min-height:12rem}
+              /* Font display swap for faster text rendering - handled by Google Fonts URL parameter */
+              /* Hero text optimization - ensure fast rendering */
+              h1{font-family:Inter,system-ui,-apple-system,sans-serif;font-display:swap}
+              p{font-family:Inter,system-ui,-apple-system,sans-serif;font-display:swap}
             `,
           }}
         />
@@ -483,15 +709,24 @@ export default function App() {
                   document.head.appendChild(script);
                 }
                 
-                // Use requestIdleCallback if available, otherwise defer to next tick
+                // Use requestIdleCallback with longer timeout to reduce main thread blocking
+                // Load after LCP has rendered and page is interactive
                 if (window.requestIdleCallback) {
-                  window.requestIdleCallback(loadGA4, { timeout: 2000 });
+                  window.requestIdleCallback(loadGA4, { timeout: 5000 });
                 } else if (document.readyState === 'complete') {
-                  setTimeout(loadGA4, 1);
+                  // If page already loaded, wait longer to avoid blocking
+                  setTimeout(loadGA4, 2000);
                 } else {
+                  // Wait for page load, then add additional delay to avoid blocking LCP
                   window.addEventListener('load', function() {
-                    setTimeout(loadGA4, 100);
+                    setTimeout(loadGA4, 2000);
                   });
+                  // Fallback: load after a longer delay if load event hasn't fired
+                  setTimeout(function() {
+                    if (document.readyState === 'complete' && !window.gtag) {
+                      loadGA4();
+                    }
+                  }, 3000);
                 }
                 
                 // Enhanced event tracking functions for GA4 (queue events if gtag not loaded)

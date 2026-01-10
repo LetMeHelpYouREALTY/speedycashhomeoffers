@@ -61,6 +61,12 @@ export default function RelatedPages({
       ],
       sellers: [
         {
+          path: "/expired-listing",
+          title: "Expired Listing? Cash Offer+",
+          description: "Instant cash or guaranteed backup offer",
+          category: "Services",
+        },
+        {
           path: "/process",
           title: "How It Works",
           description: "Our simple 5-step process",
@@ -551,6 +557,38 @@ export default function RelatedPages({
           title: "About Dr. Duffy",
           description: "Meet our expert team",
           category: "About",
+        },
+      ],
+      "expired-listing": [
+        {
+          path: "/sellers",
+          title: "Sell Your House Fast",
+          description: "Get a fair cash offer in 24 hours",
+          category: "Services",
+        },
+        {
+          path: "/fast-home-offer",
+          title: "Fast Home Offer",
+          description: "Get your cash offer within 24 hours",
+          category: "Services",
+        },
+        {
+          path: "/process",
+          title: "How It Works",
+          description: "Our simple 5-step process",
+          category: "Process",
+        },
+        {
+          path: "/contact",
+          title: "Get Your Cash Offer+",
+          description: "Start the process today",
+          category: "Contact",
+        },
+        {
+          path: "/testimonials",
+          title: "Success Stories",
+          description: "See how we've helped others",
+          category: "Trust",
         },
       ],
     };

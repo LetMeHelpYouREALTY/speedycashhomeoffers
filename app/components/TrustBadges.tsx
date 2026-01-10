@@ -4,7 +4,10 @@ interface TrustBadgesProps {
 
 export default function TrustBadges({ className = "" }: TrustBadgesProps) {
   return (
-    <div className={`bg-gray-50 py-8 ${className}`}>
+    <div
+      className={`bg-gray-50 py-8 ${className}`}
+      style={{ minHeight: "12rem", containLayout: true }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -15,7 +18,10 @@ export default function TrustBadges({ className = "" }: TrustBadgesProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+        <div
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center"
+          style={{ minHeight: "8rem" }}
+        >
           {/* BBB Rating */}
           <div className="flex flex-col items-center space-y-2">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">

@@ -100,6 +100,12 @@ export const loader = async ({ request }: { request: Request }) => {
       lastmod: recentUpdate,
     },
     {
+      url: "/expired-listing",
+      priority: "0.9",
+      changefreq: "monthly",
+      lastmod: recentUpdate,
+    },
+    {
       url: "/buyers",
       priority: "0.9",
       changefreq: "monthly",

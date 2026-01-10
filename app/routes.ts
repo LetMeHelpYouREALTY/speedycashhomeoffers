@@ -18,6 +18,7 @@ export default [
   route("sell-my-house-fast-riverside", "routes/sell-my-house-fast-riverside.tsx"),
   route("sell-my-house-fast-inland-empire", "routes/sell-my-house-fast-inland-empire.tsx"),
   route("sellers", "routes/sellers.tsx"),
+  route("expired-listing", "routes/expired-listing.tsx"),
   route("buyers", "routes/buyers.tsx"),
   route("investors", "routes/investors.tsx"),
   route("neighborhoods", "routes/neighborhoods.tsx"),

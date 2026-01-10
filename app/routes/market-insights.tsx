@@ -73,6 +73,7 @@ export default function MarketInsights() {
                 name: "Dr. Janet Duffy",
                 jobTitle: "Founder & CEO",
               },
+              license: "https://www.speedycashhomeoffers.com/terms-of-service",
               temporalCoverage: "2025",
               spatialCoverage: [
                 {
@@ -95,6 +96,15 @@ export default function MarketInsights() {
                   "@type": "Place",
                   name: "San Bernardino County, California",
                 },
+              ],
+              dateModified: new Date().toISOString().split("T")[0],
+              keywords: [
+                "real estate market data",
+                "Las Vegas real estate",
+                "Southern California real estate",
+                "market trends",
+                "housing market",
+                "real estate statistics",
               ],
             },
           }),

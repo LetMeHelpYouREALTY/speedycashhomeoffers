@@ -120,6 +120,19 @@ export default function About() {
               "https://www.facebook.com/speedycashhomeoffers",
               "https://www.linkedin.com/company/speedycashhomeoffers",
             ],
+          }),
+        }}
+      />
+      {/* Organization Schema with AggregateRating for Reviews */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.speedycashhomeoffers.com/#organization",
+            name: "Speedy Cash Home Offers | Homes by Dr. Jan Duffy",
+            url: "https://www.speedycashhomeoffers.com",
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: "4.9",
