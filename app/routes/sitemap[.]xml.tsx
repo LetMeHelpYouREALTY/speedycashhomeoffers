@@ -8,7 +8,7 @@ export const loader = async ({ request }: { request: Request }) => {
   // Define all your routes with their priorities, change frequencies, and lastmod dates
   const routes = [
     {
-      url: "",
+      url: "/",
       priority: "1.0",
       changefreq: "weekly",
       lastmod: recentUpdate,
@@ -54,6 +54,12 @@ export const loader = async ({ request }: { request: Request }) => {
       priority: "0.9",
       changefreq: "monthly",
       lastmod: recentUpdate,
+    },
+    {
+      url: "/thank-you",
+      priority: "0.6",
+      changefreq: "yearly",
+      lastmod: stableDate,
     },
     // Location-specific pages (high priority for local SEO)
     {
@@ -199,13 +205,12 @@ export const loader = async ({ request }: { request: Request }) => {
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes
   .map(
     (route) => `  <url>
     <loc>${baseUrl}${route.url}</loc>
-    <lastmod>${route.lastmod || currentDate}</lastmod>
+    <lastmod>${route.lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
   </url>`
@@ -216,7 +221,7 @@ ${routes
   return new Response(sitemap, {
     status: 200,
     headers: {
-      "Content-Type": "application/xml; charset=utf-8",
+      "Content-Type": "text/xml; charset=utf-8",
       "Cache-Control": "public, max-age=3600, s-maxage=3600",
     },
   });
