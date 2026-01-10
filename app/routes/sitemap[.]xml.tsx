@@ -221,8 +221,9 @@ ${routes
   return new Response(sitemap, {
     status: 200,
     headers: {
-      "Content-Type": "text/xml; charset=utf-8",
+      "Content-Type": "application/xml; charset=utf-8",
       "Cache-Control": "public, max-age=3600, s-maxage=3600",
+      "X-Content-Type-Options": "nosniff",
     },
   });
 };

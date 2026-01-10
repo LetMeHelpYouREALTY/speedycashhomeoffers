@@ -122,7 +122,8 @@ Allow: /`;
     }
 
     // Handle sitemap.xml early - return XML response immediately (before any other processing)
-    if (pathname === "/sitemap.xml") {
+    // Handle both /sitemap.xml and /sitemap.xml/ (with trailing slash)
+    if (pathname === "/sitemap.xml" || pathname === "/sitemap.xml/") {
       const baseUrl = "https://www.speedycashhomeoffers.com";
       const currentDate = new Date().toISOString().split("T")[0];
       const recentUpdate = currentDate;
@@ -163,21 +164,27 @@ Allow: /`;
         { url: "/zillow-cash-offer", priority: "0.7", changefreq: "monthly", lastmod: recentUpdate },
       ];
 
-      const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+      // Generate valid XML sitemap
+      const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${routes.map((route) => `  <url>
+${routes
+  .map(
+    (route) => `  <url>
     <loc>${baseUrl}${route.url}</loc>
     <lastmod>${route.lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
-  </url>`).join("\n")}
+  </url>`
+  )
+  .join("\n")}
 </urlset>`;
 
-      throw new Response(sitemap, {
+      throw new Response(sitemapXml, {
         status: 200,
         headers: {
-          "Content-Type": "text/xml; charset=utf-8",
+          "Content-Type": "application/xml; charset=utf-8",
           "Cache-Control": "public, max-age=3600, s-maxage=3600",
+          "X-Content-Type-Options": "nosniff",
         },
       });
     }
