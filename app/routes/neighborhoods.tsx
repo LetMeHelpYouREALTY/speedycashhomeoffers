@@ -541,7 +541,7 @@ export default function Neighborhoods() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 mb-8">
               Choosing the right neighborhood is just as important as choosing the right home. Dr.
-              Janet Duffy's 25+ years of Las Vegas real estate experience means she understands the
+              Janet Duffy's experience in real estate since 1983 means she understands the
               nuances of each area and can help you find the neighborhood that best matches your
               lifestyle, budget, and long-term goals.
             </p>

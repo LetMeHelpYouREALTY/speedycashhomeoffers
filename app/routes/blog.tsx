@@ -109,7 +109,7 @@ export default function Blog() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Real Estate Blog</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+              Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
               days. We buy houses for cash and there is no obligation, so contact us today or read
               our online reviews!
             </p>
@@ -137,8 +137,7 @@ export default function Blog() {
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Welcome to the Speedy Cash Home Offers blog, your trusted source for real estate
-              insights, home selling strategies, and market analysis. Led by Dr. Janet Duffy with
-              over 25 years of experience in Las Vegas and Southern California real estate markets,
+              insights, home selling strategies, and market analysis. Led by Dr. Janet Duffy, in real estate since 1983 across Las Vegas and Southern California markets,
               our blog provides valuable information to help homeowners make informed decisions
               about selling their properties. Whether you're facing foreclosure, dealing with an
               inherited property, going through a divorce, or simply want to avoid the traditional
@@ -385,7 +384,7 @@ export default function Blog() {
                   Avoid Making These Common Mistakes When Selling a Home in Las Vegas
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Learn from Dr. Duffy's 25+ years of experience. Discover the most common mistakes
+                  Learn from Dr. Duffy's experience in real estate since 1983. Discover the most common mistakes
                   homeowners make when selling and how to avoid them, ensuring a smooth transaction
                   process.
                 </p>
@@ -496,7 +495,7 @@ export default function Blog() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Expert Insights</h3>
               <p className="text-gray-600">
-                25+ years of real estate experience from Dr. Janet Duffy
+                Real estate experience since 1983 from Dr. Janet Duffy
               </p>
             </div>
             <div className="text-center">
@@ -623,7 +622,7 @@ export default function Blog() {
                 property, or an investment property, our blog provides the knowledge you need to
                 understand your options and make the best decision for your situation. Our articles
                 are written from the perspective of experienced real estate professionals who have
-                helped thousands of homeowners sell their properties successfully.
+                helped 500+ homeowners sell their properties successfully.
               </p>
             </div>
             <div>
@@ -669,7 +668,7 @@ export default function Blog() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Sell Your House Fast?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. We buy houses for cash and there is no obligation, so contact us today! Let our
             blog insights guide you toward making the best decision for your property sale.
           </p>

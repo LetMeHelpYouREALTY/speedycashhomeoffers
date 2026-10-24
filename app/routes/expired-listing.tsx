@@ -394,8 +394,7 @@ export default function ExpiredListing() {
             </ul>
             <p className="text-gray-700 mb-6">
               The best way to determine if Cash Offer+ is the right fit for you is to have a
-              conversation with Dr. Janet Duffy. With over 25 years of real estate experience in Las
-              Vegas, Dr. Duffy understands the challenges homeowners face and can help you
+              conversation with Dr. Janet Duffy. In real estate since 1983, Dr. Duffy understands the challenges homeowners face and can help you
               understand how this innovative program can work for your specific situation.
             </p>
 

@@ -11,7 +11,6 @@
     },
     "routeIdToServerBundleId": {
       "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
-      "routes/test": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/process": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/testimonials": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/meet-the-team": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
@@ -25,6 +24,7 @@
       "routes/sell-my-house-fast-riverside": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/sell-my-house-fast-inland-empire": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/sellers": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/expired-listing": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/buyers": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/investors": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/neighborhoods": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
@@ -56,15 +56,6 @@
         "parentId": "root",
         "file": "app/routes/home.tsx",
         "index": true,
-        "config": {
-          "runtime": "nodejs"
-        }
-      },
-      "routes/test": {
-        "id": "routes/test",
-        "parentId": "root",
-        "file": "app/routes/test.tsx",
-        "path": "test",
         "config": {
           "runtime": "nodejs"
         }
@@ -182,6 +173,15 @@
         "parentId": "root",
         "file": "app/routes/sellers.tsx",
         "path": "sellers",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/expired-listing": {
+        "id": "routes/expired-listing",
+        "parentId": "root",
+        "file": "app/routes/expired-listing.tsx",
+        "path": "expired-listing",
         "config": {
           "runtime": "nodejs"
         }
@@ -351,9 +351,9 @@
     }
   },
   "reactRouterConfig": {
-    "appDirectory": "/home/user/speedycashhomeoffers/app",
+    "appDirectory": "/home/claude/speedycashhomeoffers/app",
     "basename": "/",
-    "buildDirectory": "/home/user/speedycashhomeoffers/build",
+    "buildDirectory": "/home/claude/speedycashhomeoffers/build",
     "future": {
       "v8_middleware": false,
       "unstable_optimizeDeps": false,
@@ -372,12 +372,6 @@
         "parentId": "root",
         "file": "routes/home.tsx",
         "index": true
-      },
-      "routes/test": {
-        "id": "routes/test",
-        "parentId": "root",
-        "file": "routes/test.tsx",
-        "path": "test"
       },
       "routes/process": {
         "id": "routes/process",
@@ -456,6 +450,12 @@
         "parentId": "root",
         "file": "routes/sellers.tsx",
         "path": "sellers"
+      },
+      "routes/expired-listing": {
+        "id": "routes/expired-listing",
+        "parentId": "root",
+        "file": "routes/expired-listing.tsx",
+        "path": "expired-listing"
       },
       "routes/buyers": {
         "id": "routes/buyers",
@@ -584,10 +584,6 @@
             "index": true
           },
           {
-            "file": "routes/test.tsx",
-            "path": "test"
-          },
-          {
             "file": "routes/process.tsx",
             "path": "process"
           },
@@ -638,6 +634,10 @@
           {
             "file": "routes/sellers.tsx",
             "path": "sellers"
+          },
+          {
+            "file": "routes/expired-listing.tsx",
+            "path": "expired-listing"
           },
           {
             "file": "routes/buyers.tsx",

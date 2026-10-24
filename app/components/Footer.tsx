@@ -143,6 +143,9 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © {currentYear} Speedy Cash Home Offers | Homes by Dr. Jan Duffy. All rights reserved.
+              <div className="mt-1">
+                Berkshire Hathaway HomeServices Nevada Properties since September 2008 · License S.0197614.LLC
+              </div>
             </div>
             <div className="flex space-x-6 text-sm">
               <Link
@@ -187,9 +190,9 @@ export default function Footer() {
             </div>
             <div className="flex items-center">
               <span className="bg-green-500 text-white px-2 py-1 rounded text-xs font-bold mr-2">
-                25+
+                Since 1983
               </span>
-              <span>Years Experience</span>
+              <span>In Real Estate</span>
             </div>
           </div>
         </div>

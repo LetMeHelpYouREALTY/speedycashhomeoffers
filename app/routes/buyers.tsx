@@ -260,13 +260,13 @@ export default function Buyers() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                25+ Years of Las Vegas Market Expertise
+                Las Vegas Market Expertise Since 1983
               </h3>
               <p className="text-gray-600 mb-4">
                 <a href="/about" className="text-green-600 hover:text-green-800 underline">
                   Dr. Janet Duffy
                 </a>{" "}
-                brings over 25 years of real estate experience to every home search. Her deep
+                has been in real estate since 1983 and brings that experience to every home search. Her deep
                 understanding of{" "}
                 <a href="/neighborhoods" className="text-green-600 hover:text-green-800 underline">
                   Las Vegas neighborhoods
@@ -277,7 +277,7 @@ export default function Buyers() {
                 well long-term.
               </p>
               <p className="text-gray-600">
-                With a Ph.D. in Real Estate Economics, Dr. Duffy combines academic knowledge with
+                With a Ph.D. in Research, Dr. Duffy combines academic knowledge with
                 practical experience to help you make informed decisions. She understands market
                 dynamics, pricing strategies, and negotiation tactics that can save you money and
                 help you find the perfect home. Learn more about{" "}
@@ -330,7 +330,7 @@ export default function Buyers() {
                 Expert Negotiation Skills
               </h3>
               <p className="text-gray-600 mb-4">
-                With decades of experience in real estate transactions, Dr. Duffy is an expert
+                In real estate since 1983, Dr. Duffy is an expert
                 negotiator who knows how to get you the best deal possible. She understands market
                 conditions, property values, and seller motivations, allowing her to craft offers
                 and negotiate terms that work in your favor. Her negotiation skills have saved
@@ -541,7 +541,7 @@ export default function Buyers() {
           <h2 className="text-3xl font-bold mb-6">Ready to Find Your Dream Home?</h2>
           <p className="text-xl mb-8">
             Let Dr. Janet Duffy help you navigate the Las Vegas real estate market with confidence.
-            With over 25 years of experience and a commitment to personalized service, she'll help
+            In real estate since 1983 and with a commitment to personalized service, she'll help
             you find the perfect home that meets your needs, fits your budget, and exceeds your
             expectations.
           </p>

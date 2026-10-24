@@ -245,7 +245,7 @@ export default function Process() {
                 Southern California
               </a>
               . We buy old houses, we buy houses fast in bad shape, we buy houses in need of repair.
-              We have purchased thousands of houses and we can buy yours in just a few days. There
+              We have purchased 500+ houses and we can buy yours in just a few days. There
               is no obligation, so{" "}
               <a href="/contact" className="text-teal-600 hover:text-teal-800 underline">
                 contact us today
@@ -571,7 +571,7 @@ export default function Process() {
               <p className="text-gray-600">
                 Many businesses claim they'll buy your home in any condition or pay cash, but their
                 efficiency and reliability can vary widely. At Speedy Cash Home Offers, we've
-                purchased thousands of homes throughout Las Vegas and Southern California. Our
+                purchased 500+ homes throughout Las Vegas and Southern California. Our
                 process is designed to make things easy for you, the homeowner, so you can get cash
                 quickly and with minimal hassle.
               </p>
@@ -816,7 +816,7 @@ export default function Process() {
               </h3>
               <p className="text-gray-600 mb-4">
                 The property assessment call is where we dive deeper into your specific situation.
-                Our experienced team members have handled thousands of home purchases across Las
+                Our experienced team members have handled 500+ home purchases across Las
                 Vegas and Southern California, so we're well-equipped to understand even the most
                 complex circumstances. During this conversation, we'll ask about your property's
                 condition, location, size, and any unique features or challenges it might have.
@@ -893,7 +893,7 @@ export default function Process() {
                 to handle your move, we'll accommodate your schedule. On closing day, you'll receive
                 your cash payment, and the property will be officially transferred to us. It's that
                 simple - no waiting for buyer financing to be approved, no last-minute
-                deal-breakers, no stress. We've completed thousands of transactions, and our
+                deal-breakers, no stress. We've completed 500+ transactions, and our
                 streamlined process ensures yours goes smoothly from start to finish.
               </p>
             </div>

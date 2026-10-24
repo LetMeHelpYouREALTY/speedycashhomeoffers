@@ -311,7 +311,7 @@ export default function Sellers() {
                 <a href="/faqs" className="text-blue-600 hover:text-blue-800 underline">
                   how our process works
                 </a>{" "}
-                and why thousands of homeowners choose us.
+                and why 500+ homeowners choose us.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -489,8 +489,7 @@ export default function Sellers() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 mb-8">
               At Speedy Cash Home Offers, we use a comprehensive evaluation process to determine
-              fair cash offers for your property. Our team, led by Dr. Janet Duffy with over 25
-              years of Las Vegas real estate experience, considers multiple factors to ensure you
+              fair cash offers for your property. Our team, led by Dr. Janet Duffy, in real estate since 1983, considers multiple factors to ensure you
               receive a competitive offer that reflects your home's true value.
             </p>
             <div className="space-y-6">
@@ -642,7 +641,7 @@ export default function Sellers() {
               </h3>
               <p className="text-gray-600 mb-4">
                 After the property walkthrough, Dr. Janet Duffy and our team conduct a thorough
-                market analysis using our 25+ years of Las Vegas real estate experience. We review
+                market analysis using Dr. Duffy's real estate experience since 1983. We review
                 recent comparable sales in your neighborhood, analyze current market trends, assess
                 property condition factors, and consider location-specific advantages or challenges.
               </p>
@@ -774,10 +773,10 @@ export default function Sellers() {
                 repairs before selling.
               </p>
               <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
-                Working with Dr. Janet Duffy: 25+ Years of Las Vegas Experience
+                Working with Dr. Janet Duffy: In Real Estate Since 1983
               </h3>
               <p className="text-gray-600 mb-4">
-                Dr. Janet Duffy brings over 25 years of real estate experience specifically in the Las
+                Dr. Janet Duffy has been in real estate since 1983, specifically in the Las
                 Vegas market. This deep local knowledge means she understands neighborhood trends,
                 property values, market cycles, and what makes a property valuable in different Las
                 Vegas areas. This expertise directly benefits you through more accurate valuations and

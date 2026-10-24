@@ -8,12 +8,12 @@ export const meta: Route.MetaFunction = () => {
     {
       name: "description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. 25+ years of experience helping homeowners sell fast and get fair cash offers.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast and get fair cash offers.",
     },
     {
       name: "keywords",
       content:
-        "Dr Janet Duffy, Las Vegas real estate professional, cash home buyers Las Vegas, Ph.D. Real Estate Economics, licensed real estate broker, Speedy Cash Home Offers",
+        "Dr Janet Duffy, Las Vegas real estate professional, cash home buyers Las Vegas, Ph.D. in Research, licensed real estate broker, Speedy Cash Home Offers",
     },
     { name: "author", content: "Dr. Janet Duffy" },
     { name: "robots", content: "index, follow" },
@@ -22,7 +22,7 @@ export const meta: Route.MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. 25+ years of experience helping homeowners sell fast and get fair cash offers.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast and get fair cash offers.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.speedycashhomeoffers.com/about" },
@@ -36,7 +36,7 @@ export const meta: Route.MetaFunction = () => {
     {
       name: "twitter:description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. 25+ years of experience helping homeowners sell fast.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast.",
     },
     {
       name: "twitter:image",
@@ -58,7 +58,7 @@ export default function About() {
             "@type": "WebPage",
             name: "About Dr. Janet Duffy | Speedy Cash Home Offers",
             description:
-              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional with over 25 years of experience. Ph.D. in Real Estate Economics, licensed broker.",
+              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional in real estate since 1983. Ph.D. in Research, licensed broker.",
             url: "https://www.speedycashhomeoffers.com/about",
             datePublished: "2024-01-15",
             dateModified: "2025-01-17",
@@ -93,7 +93,7 @@ export default function About() {
             },
             url: "https://www.speedycashhomeoffers.com/about",
             description:
-              "Las Vegas's most trusted real estate professional with over 25 years of experience. Ph.D. in Real Estate Economics, licensed real estate broker, helping homeowners sell properties quickly and hassle-free.",
+              "Las Vegas's most trusted real estate professional in real estate since 1983. Ph.D. in Research, licensed real estate broker, helping homeowners sell properties quickly and hassle-free.",
             email: "DrDuffy@SpeedyCashHomeOffers.com",
             telephone: "(702) 500-1981",
             address: {
@@ -152,7 +152,7 @@ export default function About() {
             "@type": "AboutPage",
             name: "About Dr. Janet Duffy",
             description:
-              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional with 25+ years of experience helping homeowners sell properties fast for cash.",
+              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional with In real estate since 1983, helping homeowners sell properties fast for cash.",
             url: "https://www.speedycashhomeoffers.com/about",
             mainEntity: {
               "@type": "Person",
@@ -206,9 +206,9 @@ export default function About() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">25+</div>
-              <p className="text-gray-600">Years of Experience</p>
-              <p className="text-sm text-gray-500">We have helped 1,000s of home sellers</p>
+              <div className="text-4xl font-bold text-indigo-600 mb-2">Since 1983</div>
+              <p className="text-gray-600">In Real Estate</p>
+              <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-indigo-600 mb-2">$20K</div>
@@ -230,8 +230,7 @@ export default function About() {
                 Your Trusted Real Estate Partner
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Dr. Janet Duffy has been helping Las Vegas homeowners sell their properties quickly
-                and hassle-free for over 25 years. With a Ph.D. in Real Estate Economics and
+                Dr. Janet Duffy, a Top 1% Las Vegas REALTOR® in real estate since 1983, helps Las Vegas homeowners sell their properties quickly and hassle-free. With a Ph.D. in Research and
                 extensive experience in the Las Vegas market, Dr. Duffy understands the unique
                 challenges homeowners face when selling their properties.
               </p>
@@ -275,7 +274,7 @@ export default function About() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-700">Ph.D. in Real Estate Economics</span>
+                  <span className="text-gray-700">Ph.D. in Research</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -428,7 +427,7 @@ export default function About() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold mb-3 text-gray-900">
-                  Ph.D. in Real Estate Economics
+                  Ph.D. in Research
                 </h3>
                 <p className="text-gray-600 mb-4">
                   Dr. Duffy's doctoral degree in Real Estate Economics provides her with deep
@@ -579,7 +578,7 @@ export default function About() {
                 Education and Credentials
               </h3>
               <p className="text-gray-600 mb-4">
-                Dr. Janet Duffy holds a Ph.D. in Real Estate Economics, providing her with deep
+                Dr. Janet Duffy holds a Ph.D. in Research, providing her with deep
                 theoretical knowledge and analytical skills that complement her extensive practical
                 experience. This advanced education enables her to understand complex market dynamics,
                 property valuation methodologies, and economic factors that influence real estate
@@ -601,10 +600,10 @@ export default function About() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                25+ Years of Las Vegas Real Estate Experience
+                In Las Vegas Real Estate Since 1983
               </h3>
               <p className="text-gray-600 mb-4">
-                With over 25 years of experience specifically in the Las Vegas real estate market,
+                In real estate since 1983, with deep experience in the Las Vegas market,
                 Dr. Janet Duffy has witnessed and navigated multiple market cycles, economic
                 fluctuations, and neighborhood transformations. This long-term perspective allows her to
                 understand not just current market conditions, but also how neighborhoods and
@@ -612,7 +611,7 @@ export default function About() {
               </p>
               <p className="text-gray-600 mb-4">
                 Her experience spans various property types, from single-family homes and condos to
-                investment properties and distressed real estate. She's helped thousands of
+                investment properties and distressed real estate. She's helped 500+
                 homeowners sell properties in situations ranging from routine sales to complex
                 scenarios involving foreclosures, probate, divorce, and inherited properties.
               </p>

@@ -146,7 +146,7 @@ export default function Contact() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us Today</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+              Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
               days. There is no obligation, so contact us today and we will share some house selling
               tips too!
             </p>
@@ -199,8 +199,7 @@ export default function Contact() {
               At Speedy Cash Home Offers, we understand that selling your home can be one of the
               most important decisions you'll make. Whether you're facing foreclosure, dealing with
               an inherited property, going through a divorce, relocating for work, or simply want to
-              avoid the traditional selling process, we're here to help. Our experienced team, led
-              by Dr. Janet Duffy, has helped thousands of homeowners across Las Vegas and Southern
+              avoid the traditional selling process, we're here to help. Our experienced team, led by Dr. Janet Duffy, has helped 500+ homeowners across Las Vegas and Southern
               California sell their properties quickly and stress-free.
             </p>
           </div>
@@ -425,7 +424,7 @@ export default function Contact() {
               There are many home buying websites and companies that say "we buy houses as is, in
               any condition" or they can give you a fast house sale. It's important to know that
               these companies may or may not have successful track records of making the process
-              easy for you and closing in a timely manner. We have purchased thousands of houses and
+              easy for you and closing in a timely manner. We have purchased 500+ houses and
               have a system that minimizes the work for the home seller. We will only make a cash
               offer for your home if we can complete the transaction in a timely manner and simplify
               it for you!
@@ -459,7 +458,7 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
               <p className="text-gray-600">
-                We have purchased thousands of houses with a system that minimizes work for home
+                We have purchased 500+ houses with a system that minimizes work for home
                 sellers.
               </p>
             </div>
@@ -636,7 +635,7 @@ export default function Contact() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 mb-8">
               When you contact Speedy Cash Home Offers, you're taking the first step toward a
-              stress-free home sale. Our team, led by Dr. Janet Duffy, has helped thousands of
+              stress-free home sale. Our team, led by Dr. Janet Duffy, has helped 500+
               homeowners across Las Vegas and Southern California sell their properties quickly and
               hassle-free. Here's what makes us different and why you should reach out today.
             </p>
@@ -664,8 +663,7 @@ export default function Contact() {
                   Expert Market Knowledge
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Dr. Duffy's 25+ years of experience in Las Vegas and Southern California real
-                  estate markets means we have deep knowledge of local property values, market
+                  Dr. Duffy's experience in real estate since 1983, across Las Vegas and Southern California markets, means we have deep knowledge of local property values, market
                   trends, and neighborhood characteristics. This expertise allows us to provide
                   accurate valuations and competitive cash offers based on current market
                   conditions.
@@ -755,7 +753,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Sell Your House Fast?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. There is no obligation, so contact us today! Get your free cash offer and discover
             how easy it can be to sell your home without the traditional hassles.
           </p>

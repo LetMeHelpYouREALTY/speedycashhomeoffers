@@ -68,7 +68,7 @@ export default function MeetTheTeam() {
               name: "Dr. Janet Duffy",
               jobTitle: "Founder & CEO",
               description:
-                "With over 25 years of real estate experience, Dr. Duffy leads our team with expertise and compassion",
+                "In real estate since 1983, Dr. Duffy leads our team with expertise and compassion",
             },
             employee: [
               {
@@ -137,8 +137,7 @@ export default function MeetTheTeam() {
               At Speedy Cash Home Offers, we believe that selling your home should be a
               straightforward, stress-free experience. Our team of dedicated professionals works
               tirelessly to ensure every homeowner receives fair treatment, transparent
-              communication, and exceptional service throughout the entire process. With over 25
-              years of combined experience in Las Vegas and Southern California real estate markets,
+              communication, and exceptional service throughout the entire process. With Dr. Duffy in real estate since 1983 and our team's experience in Las Vegas and Southern California markets,
               we understand the unique challenges homeowners face and are committed to providing
               solutions that work for your specific situation.
             </p>
@@ -158,8 +157,8 @@ export default function MeetTheTeam() {
               <h3 className="text-xl font-semibold mb-2">Dr. Janet Duffy</h3>
               <p className="text-indigo-600 font-medium mb-2">Founder & CEO</p>
               <p className="text-gray-600 text-sm">
-                With over 25 years of real estate experience, Dr. Duffy leads our team with
-                expertise and compassion, helping thousands of homeowners sell their properties
+                In real estate since 1983, Dr. Duffy leads our team with
+                expertise and compassion, helping 500+ homeowners sell their properties
                 quickly and stress-free. Her deep understanding of Las Vegas and Southern California
                 markets ensures clients receive fair, competitive offers for their properties.
               </p>
@@ -531,7 +530,7 @@ export default function MeetTheTeam() {
               <p className="text-gray-600 mb-4">
                 We believe that ethical business practices benefit everyone - homeowners receive fair
                 treatment and honest offers, and we build long-term relationships based on trust and
-                respect. This approach has allowed us to help thousands of homeowners while
+                respect. This approach has allowed us to help 500+ homeowners while
                 maintaining our reputation as Las Vegas's most trusted cash home buyers.
               </p>
               <h3 className="text-xl font-semibold mb-4 text-gray-900 mt-6">
@@ -596,7 +595,7 @@ export default function MeetTheTeam() {
                   Streamlined Process Efficiency
                 </h3>
                 <p className="text-gray-600">
-                  Our team has refined our cash home buying process over thousands of transactions,
+                  Our team has refined our cash home buying process across 500+ transactions,
                   creating a streamlined system that eliminates unnecessary steps while ensuring
                   nothing important is overlooked. This efficiency means faster closings, less
                   paperwork for you, and a smoother overall experience compared to traditional real
@@ -613,7 +612,7 @@ export default function MeetTheTeam() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Work With Our Expert Team?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. Our experienced team is ready to provide you with exceptional service and a fair
             cash offer for your property. There is no obligation, so contact us today!
           </p>

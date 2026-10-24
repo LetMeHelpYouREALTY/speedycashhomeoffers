@@ -21,8 +21,8 @@ export default function AuthorBio({ showFullBio = false, className = "" }: Autho
 
           <div className="space-y-3 text-gray-600">
             <p className="text-sm">
-              <strong>25+ Years Experience:</strong> Dr. Janet Duffy has been helping Las Vegas
-              homeowners sell their properties quickly and efficiently for over two decades.
+              <strong>In Real Estate Since 1983:</strong> Dr. Janet Duffy has been helping Las Vegas
+              homeowners sell their properties quickly and efficiently.
             </p>
 
             <p className="text-sm">
@@ -34,7 +34,7 @@ export default function AuthorBio({ showFullBio = false, className = "" }: Autho
             <p className="text-sm">
               <strong>Distressed Property Specialist:</strong> With extensive experience in
               foreclosure prevention, inherited properties, and distressed real estate, Dr. Duffy
-              has helped over 500 families avoid foreclosure and get fair cash offers.
+              has helped 500+ families avoid foreclosure and get fair cash offers.
             </p>
 
             {showFullBio && (
@@ -90,7 +90,7 @@ export default function AuthorBio({ showFullBio = false, className = "" }: Autho
               name: "Speedy Cash Home Offers",
             },
             description:
-              "Las Vegas real estate expert with 25+ years experience specializing in distressed properties and foreclosure prevention",
+              "Las Vegas real estate expert in real estate since 1983, specializing in distressed properties and foreclosure prevention",
             url: "https://www.speedycashhomeoffers.com/meet-the-team",
             telephone: "(702) 500-1981",
             email: "DrDuffy@SpeedyCashHomeOffers.com",

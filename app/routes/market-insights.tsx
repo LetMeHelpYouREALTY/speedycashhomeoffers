@@ -595,7 +595,7 @@ export default function MarketInsights() {
             Ready to Take Advantage of Current Market Conditions?
           </h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. Get expert market insights and a fair cash offer today! Our comprehensive market
             analysis helps us provide competitive offers that reflect current market conditions in
             Las Vegas and Southern California.

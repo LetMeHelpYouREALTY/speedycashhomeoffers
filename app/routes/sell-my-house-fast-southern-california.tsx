@@ -92,7 +92,7 @@ export default function SellMyHouseFastSouthernCalifornia() {
     "@type": "LocalBusiness",
     name: businessName,
     description:
-      "Dr. Janet Duffy has purchased thousands of homes in Southern California and we pay cash fast. Find out how much money you can get today!",
+      "Dr. Janet Duffy has completed 500+ transactions and buys homes in Southern California and we pay cash fast. Find out how much money you can get today!",
     url: "https://www.speedycashhomeoffers.com/sell-my-house-fast-southern-california",
     telephone: phoneNumber,
     email: email,
@@ -235,9 +235,9 @@ export default function SellMyHouseFastSouthernCalifornia() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-orange-600 mb-2">25+</div>
-              <p className="text-gray-600">Years of Experience</p>
-              <p className="text-sm text-gray-500">We have helped 1,000s of home sellers</p>
+              <div className="text-4xl font-bold text-orange-600 mb-2">Since 1983</div>
+              <p className="text-gray-600">In Real Estate</p>
+              <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-orange-600 mb-2">$20K</div>
@@ -722,7 +722,7 @@ export default function SellMyHouseFastSouthernCalifornia() {
             Ready to Sell Your Southern California Home Fast?
           </h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of homes in Southern California and we pay cash
+            Dr. Janet Duffy has completed 500+ transactions and buys homes in Southern California and we pay cash
             fast. Find out how much money you can get today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

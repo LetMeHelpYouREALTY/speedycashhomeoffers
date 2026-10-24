@@ -188,7 +188,7 @@ export default function Testimonials() {
               Customer Reviews and Testimonials
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+              Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
               days. There is no obligation, so contact us today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -225,10 +225,10 @@ export default function Testimonials() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-purple-600 mb-2">25+</div>
-              <p className="text-gray-600">Years of Experience</p>
+              <div className="text-4xl font-bold text-purple-600 mb-2">Since 1983</div>
+              <p className="text-gray-600">In Real Estate</p>
               <p className="text-sm text-gray-500">
-                We have helped 1,000s of home sellers like yourself
+                We have helped 500+ home sellers like yourself
               </p>
             </div>
             <div>
@@ -738,7 +738,7 @@ export default function Testimonials() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Join Our Satisfied Customers?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. There is no obligation, so contact us today! Experience the same exceptional
             service that has earned us hundreds of 5-star reviews from homeowners across Las Vegas
             and Southern California.

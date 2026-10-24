@@ -338,7 +338,7 @@ export default function FastHomeOffer() {
             </p>
             <p className="text-gray-700 mb-6">
               Our fast home offer service combines speed with fairness, providing quick offers that
-              reflect your property's true market value. We've helped thousands of homeowners with
+              reflect your property's true market value. We've helped 500+ homeowners with
               fast home offer services, and we're ready to help you too. Get your fast home offer
               today and see how quickly you can sell your property.
             </p>

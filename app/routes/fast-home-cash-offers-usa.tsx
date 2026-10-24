@@ -226,8 +226,7 @@ export default function FastHomeCashOffersUSA() {
             </p>
             <p className="text-gray-700 mb-6">
               At Speedy Cash Home Offers, we understand that when you need fast home cash offers
-              USA, you need a company you can trust. With over 25 years of experience in real estate
-              and a proven track record of helping thousands of homeowners, we've built a reputation
+              USA, you need a company you can trust. With Dr. Duffy in real estate since 1983 and a proven track record of helping 500+ homeowners, we've built a reputation
               for providing fair, transparent cash offers that close quickly. Our{" "}
               <a href="/process" className="text-blue-600 hover:text-blue-800 underline">
                 process is designed
@@ -403,8 +402,7 @@ export default function FastHomeCashOffersUSA() {
             </p>
             <p className="text-gray-700 mb-4">
               At Speedy Cash Home Offers, we've been providing fast home cash offers USA services
-              for over a decade. Our founder, Dr. Janet Duffy, brings over 25 years of real estate
-              experience to every transaction. We've earned an A+ rating from the Better Business
+              for over a decade. Our founder, Dr. Janet Duffy, has been in real estate since 1983 and brings that experience to every transaction. We've earned an A+ rating from the Better Business
               Bureau and maintain a 4.9-star rating from over 500 satisfied customers. This track
               record demonstrates our commitment to providing excellent fast home cash offers USA
               services.
@@ -557,8 +555,8 @@ export default function FastHomeCashOffersUSA() {
             </h2>
             <p className="text-gray-700 mb-6">
               If you're ready to explore fast home cash offers USA for your property, Speedy Cash
-              Home Offers is here to help. With over 25 years of experience, an A+ BBB rating, and
-              thousands of successful transactions, we're committed to providing fair, transparent
+              Home Offers is here to help. With Dr. Duffy in real estate since 1983, an A+ BBB rating, and
+              500+ successful transactions, we're committed to providing fair, transparent
               fast home cash offers USA that work for homeowners.
             </p>
             <p className="text-gray-700 mb-6">

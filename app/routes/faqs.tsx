@@ -167,7 +167,7 @@ export default function FAQs() {
               We're Here To Answer Your Questions
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+              Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
               days. There is no obligation, so contact us today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -544,7 +544,7 @@ export default function FAQs() {
                   The Benefits of Working with an Experienced Team
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Dr. Duffy and her team have completed thousands of transactions across Las Vegas
+                  Dr. Duffy and her team have completed 500+ transactions across Las Vegas
                   and Southern California. This extensive experience means we've encountered and
                   successfully resolved virtually every type of situation that can arise in real
                   estate transactions. From probate properties to foreclosure situations, from
@@ -569,7 +569,7 @@ export default function FAQs() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of houses and we can buy yours in just a few
+            Dr. Janet Duffy has completed 500+ transactions and we can buy yours in just a few
             days. Our team is ready to answer all your questions and provide you with a fair cash
             offer for your property. There is no obligation, so contact us today!
           </p>

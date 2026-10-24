@@ -88,7 +88,7 @@ export default function SellMyHouseFastLasVegas() {
     "@type": "LocalBusiness",
     name: businessName,
     description:
-      "Dr. Janet Duffy has purchased thousands of homes in Las Vegas Nevada and we pay cash fast. Find out how much money you can get today!",
+      "Dr. Janet Duffy has completed 500+ transactions and buys homes in Las Vegas Nevada and we pay cash fast. Find out how much money you can get today!",
     url: "https://www.speedycashhomeoffers.com/sell-my-house-fast-las-vegas",
     telephone: phoneNumber,
     email: email,
@@ -203,9 +203,9 @@ export default function SellMyHouseFastLasVegas() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-yellow-600 mb-2">25+</div>
-              <p className="text-gray-600">Years of Experience</p>
-              <p className="text-sm text-gray-500">We have helped 1,000s of home sellers</p>
+              <div className="text-4xl font-bold text-yellow-600 mb-2">Since 1983</div>
+              <p className="text-gray-600">In Real Estate</p>
+              <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-yellow-600 mb-2">$20K</div>
@@ -498,8 +498,7 @@ export default function SellMyHouseFastLasVegas() {
             </div>
             <div className="mt-6 p-4 bg-white rounded-lg">
               <p className="text-gray-700 text-center">
-                <strong>Why We Excel:</strong> Dr. Janet Duffy's 25+ years of Las Vegas real estate
-                experience means we understand these common issues and can provide fair valuations
+                <strong>Why We Excel:</strong> Dr. Janet Duffy's experience in real estate since 1983 means we understand these common issues and can provide fair valuations
                 that account for repair costs while still offering competitive cash offers.
               </p>
             </div>
@@ -934,7 +933,7 @@ export default function SellMyHouseFastLasVegas() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Sell Your Las Vegas Home Fast?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of homes in Las Vegas Nevada and we pay cash
+            Dr. Janet Duffy has completed 500+ transactions and buys homes in Las Vegas Nevada and we pay cash
             fast. Find out how much money you can get today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

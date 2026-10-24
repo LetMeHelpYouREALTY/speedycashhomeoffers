@@ -314,9 +314,9 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">25+</div>
-              <div className="text-gray-600 text-lg mb-2">Years of Experience</div>
-              <p className="text-sm text-gray-500">We have helped 1,000s of home sellers</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Since 1983</div>
+              <div className="text-gray-600 text-lg mb-2">In Real Estate</div>
+              <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
               <div className="text-4xl font-bold text-blue-600 mb-2">$20K</div>
@@ -1042,7 +1042,7 @@ export default function Home() {
                   <h3 className="inline">What makes Dr. Janet Duffy different?</h3>
                 </summary>
                 <p className="text-gray-600 mt-3">
-                  Dr. Janet Duffy brings 25+ years of real estate experience and a personal touch to
+                  Dr. Janet Duffy, in real estate since 1983, brings a personal touch to
                   every transaction. As a local Las Vegas expert, she understands market nuances and
                   provides honest, transparent communication throughout the entire process.
                 </p>
@@ -1183,7 +1183,7 @@ export default function Home() {
                 investors.
               </p>
               <p className="text-gray-600 mb-4">
-                Dr. Janet Duffy's 25+ years of experience in the Las Vegas real estate market means
+                Dr. Janet Duffy's experience in real estate since 1983 means
                 she understands neighborhood trends, property values, and market dynamics specific to
                 these areas. This specialization benefits homeowners by ensuring they receive offers
                 that reflect true market value, not generic estimates that might undervalue their
@@ -1306,7 +1306,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Ready to Sell Your House Fast for Cash?</h2>
           <p className="text-xl mb-8">
             Our streamlined home-selling solution could be exactly what you need. At Speedy Cash
-            Home Offers, we've helped thousands of Las Vegas and Southern California homeowners sell
+            Home Offers, we've helped 500+ Las Vegas and Southern California homeowners sell
             their properties quickly and hassle-free. Dr. Janet Duffy and her experienced team are
             ready to provide you with a fair cash offer for your home, regardless of its condition.
           </p>

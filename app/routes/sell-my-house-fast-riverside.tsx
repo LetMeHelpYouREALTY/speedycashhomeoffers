@@ -33,7 +33,7 @@ export const meta: Route.MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Dr. Janet Duffy has purchased thousands of homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
+        "Dr. Janet Duffy has completed 500+ transactions and buys homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
     },
     {
       property: "og:image",
@@ -52,7 +52,7 @@ export const meta: Route.MetaFunction = () => {
     {
       property: "twitter:description",
       content:
-        "Dr. Janet Duffy has purchased thousands of homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
+        "Dr. Janet Duffy has completed 500+ transactions and buys homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
     },
     {
       property: "twitter:image",
@@ -88,7 +88,7 @@ export default function SellMyHouseFastRiverside() {
     "@type": "LocalBusiness",
     name: businessName,
     description:
-      "Dr. Janet Duffy has purchased thousands of homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
+      "Dr. Janet Duffy has completed 500+ transactions and buys homes in Riverside California and we pay cash fast. Find out how much money you can get today!",
     url: "https://www.speedycashhomeoffers.com/sell-my-house-fast-riverside",
     telephone: phoneNumber,
     email: email,
@@ -168,7 +168,7 @@ export default function SellMyHouseFastRiverside() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Sell My House Fast Riverside</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Dr. Janet Duffy has purchased thousands of homes in Riverside California and we pay
+              Dr. Janet Duffy has completed 500+ transactions and buys homes in Riverside California and we pay
               cash fast. Find out how much money you can get today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -202,9 +202,9 @@ export default function SellMyHouseFastRiverside() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-purple-600 mb-2">25+</div>
-              <p className="text-gray-600">Years of Experience</p>
-              <p className="text-sm text-gray-500">We have helped 1,000s of home sellers</p>
+              <div className="text-4xl font-bold text-purple-600 mb-2">Since 1983</div>
+              <p className="text-gray-600">In Real Estate</p>
+              <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div>
               <div className="text-4xl font-bold text-purple-600 mb-2">$20K</div>
@@ -572,7 +572,7 @@ export default function SellMyHouseFastRiverside() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Sell Your Riverside Home Fast?</h2>
           <p className="text-xl mb-8">
-            Dr. Janet Duffy has purchased thousands of homes in Riverside California and we pay cash
+            Dr. Janet Duffy has completed 500+ transactions and buys homes in Riverside California and we pay cash
             fast. Find out how much money you can get today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

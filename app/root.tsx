@@ -561,7 +561,7 @@ export default function App() {
                 name: "Dr. Janet Duffy",
                 jobTitle: "Founder & CEO",
                 description:
-                  "With over 25 years of real estate experience, Dr. Duffy leads our team with expertise and compassion",
+                  "In real estate since 1983, Dr. Duffy leads our team with expertise and compassion",
                 url: "https://www.speedycashhomeoffers.com/meet-the-team",
               },
               address: {
@@ -695,7 +695,7 @@ export default function App() {
               },
               url: "https://www.speedycashhomeoffers.com/meet-the-team",
               description:
-                "With over 25 years of real estate experience, Dr. Janet Duffy is the founder and CEO of Speedy Cash Home Offers, specializing in helping homeowners sell their properties quickly for cash.",
+                "In real estate since 1983, Dr. Janet Duffy is the founder and CEO of Speedy Cash Home Offers, specializing in helping homeowners sell their properties quickly for cash.",
               email: "DrDuffy@SpeedyCashHomeOffers.com",
               telephone: "+1-702-500-1981",
               address: {

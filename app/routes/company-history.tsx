@@ -124,7 +124,7 @@ export default function CompanyHistory() {
                     </p>
                     <p className="text-gray-700">
                       Starting with a focus on North Las Vegas and East Las Vegas neighborhoods, Dr.
-                      Duffy leveraged her 25+ years of real estate experience to create a
+                      Duffy leveraged her experience in real estate since 1983 to create a
                       streamlined cash home buying service.
                     </p>
                   </div>
@@ -225,7 +225,7 @@ export default function CompanyHistory() {
                       commitment to customer satisfaction.
                     </p>
                     <p className="text-gray-700">
-                      We reached a milestone of helping over 1,000 families sell their homes quickly
+                      We reached a milestone of helping 500+ families sell their homes quickly
                       and fairly, building a reputation as Las Vegas's most trusted cash home
                       buyers.
                     </p>
@@ -277,13 +277,13 @@ export default function CompanyHistory() {
                 Helping Homeowners Across Multiple Markets
               </h3>
               <p className="text-gray-600 mb-4">
-                Since our founding in 2015, Speedy Cash Home Offers has helped thousands of
+                Since our founding in 2015, Speedy Cash Home Offers has helped 500+
                 homeowners across Las Vegas and Southern California sell their properties quickly
                 and fairly. Our focus on distressed properties, inherited homes, and time-sensitive
                 situations has made us a trusted partner for homeowners facing unique challenges.
               </p>
               <p className="text-gray-600 mb-4">
-                We've successfully closed thousands of transactions, helping families avoid
+                We've successfully closed 500+ transactions, helping families avoid
                 foreclosure, settle estates, relocate for job opportunities, and navigate difficult
                 life transitions. Our track record of fast closings, fair offers, and exceptional
                 service has earned us recognition as Las Vegas's most trusted cash home buyers.
@@ -341,7 +341,7 @@ export default function CompanyHistory() {
               </h3>
               <p className="text-gray-600 mb-4">
                 Starting as a small operation in 2015, Speedy Cash Home Offers has grown into
-                Las Vegas's most trusted cash home buyers, serving thousands of homeowners across
+                Las Vegas's most trusted cash home buyers, serving 500+ homeowners across
                 Las Vegas and Southern California. Our growth has been driven by our commitment to
                 exceptional service, fair deals, and helping homeowners in difficult situations.
               </p>
@@ -484,7 +484,7 @@ export default function CompanyHistory() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Be Part of Our Story?</h2>
           <p className="text-xl mb-8">
-            Join the thousands of homeowners who have trusted Speedy Cash Home Offers to help them
+            Join the 500+ homeowners who have trusted Speedy Cash Home Offers to help them
             sell their properties quickly and fairly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
