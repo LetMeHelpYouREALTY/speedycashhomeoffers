@@ -202,7 +202,7 @@ export default function SellMyHouseFastSanDiego() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-600 mb-2">Since 1983</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">Since 2008</div>
               <p className="text-gray-600">In Real Estate</p>
               <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>

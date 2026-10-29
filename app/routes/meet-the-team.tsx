@@ -68,7 +68,7 @@ export default function MeetTheTeam() {
               name: "Dr. Janet Duffy",
               jobTitle: "Founder & CEO",
               description:
-                "In real estate since 1983, Dr. Duffy leads our team with expertise and compassion",
+                "Licensed since 2008 · 35 years in Las Vegas, Dr. Duffy leads our team with expertise and compassion",
             },
             employee: [
               {
@@ -137,7 +137,7 @@ export default function MeetTheTeam() {
               At Speedy Cash Home Offers, we believe that selling your home should be a
               straightforward, stress-free experience. Our team of dedicated professionals works
               tirelessly to ensure every homeowner receives fair treatment, transparent
-              communication, and exceptional service throughout the entire process. With Dr. Duffy in real estate since 1983 and our team's experience in Las Vegas and Southern California markets,
+              communication, and exceptional service throughout the entire process. With Dr. Duffy licensed since 2008 · 35 years in Las Vegas and our team's experience in Las Vegas and Southern California markets,
               we understand the unique challenges homeowners face and are committed to providing
               solutions that work for your specific situation.
             </p>
@@ -157,7 +157,7 @@ export default function MeetTheTeam() {
               <h3 className="text-xl font-semibold mb-2">Dr. Janet Duffy</h3>
               <p className="text-indigo-600 font-medium mb-2">Founder & CEO</p>
               <p className="text-gray-600 text-sm">
-                In real estate since 1983, Dr. Duffy leads our team with
+                Licensed since 2008 · 35 years in Las Vegas, Dr. Duffy leads our team with
                 expertise and compassion, helping 500+ homeowners sell their properties
                 quickly and stress-free. Her deep understanding of Las Vegas and Southern California
                 markets ensures clients receive fair, competitive offers for their properties.

@@ -293,10 +293,10 @@ export default function ThankYou() {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-4 text-emerald-600">
-                Local Market Expertise Since 1983
+                Local Market Expertise Since 2008
               </h3>
               <p className="text-gray-600 mb-4">
-                Dr. Janet Duffy has been in real estate since 1983, specifically in the
+                Dr. Janet Duffy has been licensed since 2008 · 35 years in Las Vegas, specifically in the
                 Las Vegas and Southern California markets. This deep local knowledge means we
                 understand neighborhood trends, property values, market cycles, and what makes a
                 property valuable in different areas.

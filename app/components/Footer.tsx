@@ -190,7 +190,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center">
               <span className="bg-green-500 text-white px-2 py-1 rounded text-xs font-bold mr-2">
-                Since 1983
+                Since 2008
               </span>
               <span>In Real Estate</span>
             </div>

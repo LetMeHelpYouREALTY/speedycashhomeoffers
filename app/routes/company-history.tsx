@@ -124,7 +124,7 @@ export default function CompanyHistory() {
                     </p>
                     <p className="text-gray-700">
                       Starting with a focus on North Las Vegas and East Las Vegas neighborhoods, Dr.
-                      Duffy leveraged her experience in real estate since 1983 to create a
+                      Duffy leveraged her experience licensed since 2008 · 35 years in Las Vegas to create a
                       streamlined cash home buying service.
                     </p>
                   </div>

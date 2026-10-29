@@ -314,8 +314,8 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">Since 1983</div>
-              <div className="text-gray-600 text-lg mb-2">In Real Estate</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">Since 2008</div>
+              <div className="text-gray-600 text-lg mb-2">Licensed</div>
               <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">
@@ -1042,7 +1042,7 @@ export default function Home() {
                   <h3 className="inline">What makes Dr. Janet Duffy different?</h3>
                 </summary>
                 <p className="text-gray-600 mt-3">
-                  Dr. Janet Duffy, in real estate since 1983, brings a personal touch to
+                  Dr. Janet Duffy, licensed since 2008 · 35 years in Las Vegas, brings a personal touch to
                   every transaction. As a local Las Vegas expert, she understands market nuances and
                   provides honest, transparent communication throughout the entire process.
                 </p>
@@ -1183,7 +1183,7 @@ export default function Home() {
                 investors.
               </p>
               <p className="text-gray-600 mb-4">
-                Dr. Janet Duffy's experience in real estate since 1983 means
+                Dr. Janet Duffy's experience licensed since 2008 · 35 years in Las Vegas means
                 she understands neighborhood trends, property values, and market dynamics specific to
                 these areas. This specialization benefits homeowners by ensuring they receive offers
                 that reflect true market value, not generic estimates that might undervalue their
