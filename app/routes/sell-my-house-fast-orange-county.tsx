@@ -243,7 +243,7 @@ export default function SellMyHouseFastOrangeCounty() {
                 <li>• Orange County has a strong technology sector, particularly in Irvine.</li>
                 <li>• The median household income is around $95,000.</li>
                 <li>• Orange County offers 42 miles of coastline with beautiful beaches.</li>
-                <li>• The county has excellent schools and universities including UC Irvine.</li>
+                <li>• The county has nearby public schools and universities including UC Irvine.</li>
                 <li>• Major employers include Disney, Boeing, and various tech companies.</li>
                 <li>
                   • Orange County has a diverse economy including tourism, technology, and
@@ -269,7 +269,7 @@ export default function SellMyHouseFastOrangeCounty() {
                   and Blizzard.
                 </li>
                 <li>
-                  • <strong>Excellent Schools:</strong> Top-rated public and private schools
+                  • <strong>Nearby Public Schools:</strong> Top-rated public and private schools
                   throughout the county.
                 </li>
                 <li>

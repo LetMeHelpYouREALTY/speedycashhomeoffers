@@ -275,7 +275,7 @@ export default function SellMyHouseFastSanDiego() {
                   • <strong>Outdoor Recreation:</strong> Beaches, mountains, deserts, and parks.
                 </li>
                 <li>
-                  • <strong>Excellent Schools:</strong> Top-rated public and private schools.
+                  • <strong>Nearby Public Schools:</strong> Top-rated public and private schools.
                 </li>
                 <li>
                   • <strong>Cultural Attractions:</strong> Museums, theaters, and cultural centers.
