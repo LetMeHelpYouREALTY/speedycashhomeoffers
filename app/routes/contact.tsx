@@ -663,7 +663,7 @@ export default function Contact() {
                   Expert Market Knowledge
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Dr. Duffy's experience in real estate since 1983, across Las Vegas and Southern California markets, means we have deep knowledge of local property values, market
+                  Dr. Duffy's experience licensed since 2008 · 35 years in Las Vegas, across Las Vegas and Southern California markets, means we have deep knowledge of local property values, market
                   trends, and neighborhood characteristics. This expertise allows us to provide
                   accurate valuations and competitive cash offers based on current market
                   conditions.

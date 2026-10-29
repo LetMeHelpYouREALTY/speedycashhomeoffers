@@ -203,7 +203,7 @@ export default function SellMyHouseFastLasVegas() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-yellow-600 mb-2">Since 1983</div>
+              <div className="text-4xl font-bold text-yellow-600 mb-2">Since 2008</div>
               <p className="text-gray-600">In Real Estate</p>
               <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
@@ -498,7 +498,7 @@ export default function SellMyHouseFastLasVegas() {
             </div>
             <div className="mt-6 p-4 bg-white rounded-lg">
               <p className="text-gray-700 text-center">
-                <strong>Why We Excel:</strong> Dr. Janet Duffy's experience in real estate since 1983 means we understand these common issues and can provide fair valuations
+                <strong>Why We Excel:</strong> Dr. Janet Duffy's experience licensed since 2008 · 35 years in Las Vegas means we understand these common issues and can provide fair valuations
                 that account for repair costs while still offering competitive cash offers.
               </p>
             </div>

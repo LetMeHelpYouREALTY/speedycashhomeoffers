@@ -137,7 +137,7 @@ export default function Blog() {
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Welcome to the Speedy Cash Home Offers blog, your trusted source for real estate
-              insights, home selling strategies, and market analysis. Led by Dr. Janet Duffy, in real estate since 1983 across Las Vegas and Southern California markets,
+              insights, home selling strategies, and market analysis. Led by Dr. Janet Duffy, licensed since 2008 · 35 years in Las Vegas across Las Vegas and Southern California markets,
               our blog provides valuable information to help homeowners make informed decisions
               about selling their properties. Whether you're facing foreclosure, dealing with an
               inherited property, going through a divorce, or simply want to avoid the traditional
@@ -384,7 +384,7 @@ export default function Blog() {
                   Avoid Making These Common Mistakes When Selling a Home in Las Vegas
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  Learn from Dr. Duffy's experience in real estate since 1983. Discover the most common mistakes
+                  Learn from Dr. Duffy's experience licensed since 2008 · 35 years in Las Vegas. Discover the most common mistakes
                   homeowners make when selling and how to avoid them, ensuring a smooth transaction
                   process.
                 </p>
@@ -495,7 +495,7 @@ export default function Blog() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Expert Insights</h3>
               <p className="text-gray-600">
-                Real estate experience since 1983 from Dr. Janet Duffy
+                Real estate experience since 2008 from Dr. Janet Duffy
               </p>
             </div>
             <div className="text-center">

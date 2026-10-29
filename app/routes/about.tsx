@@ -8,7 +8,7 @@ export const meta: Route.MetaFunction = () => {
     {
       name: "description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast and get fair cash offers.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. Licensed since 2008 · 35 years in Las Vegas, helping homeowners sell fast and get fair cash offers.",
     },
     {
       name: "keywords",
@@ -22,7 +22,7 @@ export const meta: Route.MetaFunction = () => {
     {
       property: "og:description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast and get fair cash offers.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. Licensed since 2008 · 35 years in Las Vegas, helping homeowners sell fast and get fair cash offers.",
     },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.speedycashhomeoffers.com/about" },
@@ -36,7 +36,7 @@ export const meta: Route.MetaFunction = () => {
     {
       name: "twitter:description",
       content:
-        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. In real estate since 1983, helping homeowners sell fast.",
+        "Meet Dr. Janet Duffy, Las Vegas's most trusted real estate professional. Licensed since 2008 · 35 years in Las Vegas, helping homeowners sell fast.",
     },
     {
       name: "twitter:image",
@@ -58,7 +58,7 @@ export default function About() {
             "@type": "WebPage",
             name: "About Dr. Janet Duffy | Speedy Cash Home Offers",
             description:
-              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional in real estate since 1983. Ph.D. in Research, licensed broker.",
+              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional licensed since 2008 · 35 years in Las Vegas. Ph.D. in Research, licensed broker.",
             url: "https://www.speedycashhomeoffers.com/about",
             datePublished: "2024-01-15",
             dateModified: "2025-01-17",
@@ -93,7 +93,7 @@ export default function About() {
             },
             url: "https://www.speedycashhomeoffers.com/about",
             description:
-              "Las Vegas's most trusted real estate professional in real estate since 1983. Ph.D. in Research, licensed real estate broker, helping homeowners sell properties quickly and hassle-free.",
+              "Las Vegas's most trusted real estate professional licensed since 2008 · 35 years in Las Vegas. Ph.D. in Research, licensed real estate broker, helping homeowners sell properties quickly and hassle-free.",
             email: "DrDuffy@SpeedyCashHomeOffers.com",
             telephone: "(702) 500-1981",
             address: {
@@ -152,7 +152,7 @@ export default function About() {
             "@type": "AboutPage",
             name: "About Dr. Janet Duffy",
             description:
-              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional with In real estate since 1983, helping homeowners sell properties fast for cash.",
+              "Learn about Dr. Janet Duffy, Las Vegas's most trusted real estate professional with Licensed since 2008 · 35 years in Las Vegas, helping homeowners sell properties fast for cash.",
             url: "https://www.speedycashhomeoffers.com/about",
             mainEntity: {
               "@type": "Person",
@@ -206,7 +206,7 @@ export default function About() {
               </p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">Since 1983</div>
+              <div className="text-4xl font-bold text-indigo-600 mb-2">Since 2008</div>
               <p className="text-gray-600">In Real Estate</p>
               <p className="text-sm text-gray-500">We have helped 500+ home sellers</p>
             </div>
@@ -230,7 +230,7 @@ export default function About() {
                 Your Trusted Real Estate Partner
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Dr. Janet Duffy, a Top 1% Las Vegas REALTOR® in real estate since 1983, helps Las Vegas homeowners sell their properties quickly and hassle-free. With a Ph.D. in Research and
+                Dr. Janet Duffy, a Las Vegas REALTOR® licensed since 2008 · 35 years in Las Vegas, helps Las Vegas homeowners sell their properties quickly and hassle-free. With a Ph.D. in Research and
                 extensive experience in the Las Vegas market, Dr. Duffy understands the unique
                 challenges homeowners face when selling their properties.
               </p>
@@ -600,10 +600,10 @@ export default function About() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                In Las Vegas Real Estate Since 1983
+                In Las Vegas Real Estate Since 2008
               </h3>
               <p className="text-gray-600 mb-4">
-                In real estate since 1983, with deep experience in the Las Vegas market,
+                Licensed since 2008 · 35 years in Las Vegas, with deep experience in the Las Vegas market,
                 Dr. Janet Duffy has witnessed and navigated multiple market cycles, economic
                 fluctuations, and neighborhood transformations. This long-term perspective allows her to
                 understand not just current market conditions, but also how neighborhoods and

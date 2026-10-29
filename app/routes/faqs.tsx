@@ -544,7 +544,7 @@ export default function FAQs() {
                   The Benefits of Working with an Experienced Team
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Dr. Duffy and her team have completed 500+ transactions across Las Vegas
+                  Dr. Duffy and her team have completed 500+ Dr. Duffy Group sales across Las Vegas
                   and Southern California. This extensive experience means we've encountered and
                   successfully resolved virtually every type of situation that can arise in real
                   estate transactions. From probate properties to foreclosure situations, from
