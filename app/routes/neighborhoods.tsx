@@ -130,7 +130,7 @@ export default function Neighborhoods() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Summerlin</h3>
                 <p className="text-gray-600 mb-4">
-                  Master-planned community with golf courses, shopping, and top-rated schools.
+                  Master-planned community with golf courses, shopping, and nearby public schools.
                   Perfect for{" "}
                   <a href="/buyers" className="text-orange-600 hover:text-orange-800 underline">
                     home buyers
@@ -164,7 +164,7 @@ export default function Neighborhoods() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Henderson</h3>
                 <p className="text-gray-600 mb-4">
-                  Family-friendly city with parks, recreation, and excellent amenities. Great for{" "}
+                  City with parks, recreation, and excellent amenities. Great for{" "}
                   <a href="/investors" className="text-orange-600 hover:text-orange-800 underline">
                     real estate investors
                   </a>{" "}
@@ -197,7 +197,7 @@ export default function Neighborhoods() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Green Valley</h3>
                 <p className="text-gray-600 mb-4">
-                  Established community with mature trees and convenient location.
+                  Older community with mature trees and convenient location.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex justify-between">
@@ -248,7 +248,7 @@ export default function Neighborhoods() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Top Schools</h3>
+              <h3 className="text-xl font-semibold mb-2">Nearby Public Schools</h3>
               <p className="text-gray-600">
                 Excellent public and private schools with high ratings and test scores.
               </p>
@@ -319,7 +319,7 @@ export default function Neighborhoods() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Safety & Security</h3>
               <p className="text-gray-600">
-                Low crime rates and gated communities with 24/7 security.
+                Gated communities with 24/7 security.
               </p>
             </div>
           </div>
@@ -472,17 +472,17 @@ export default function Neighborhoods() {
                 schools in Nevada. The area is served by the Clark County School District, with many
                 schools earning top ratings. Private school options are also available. For
                 families, Summerlin offers numerous youth sports programs, community centers, and
-                family-friendly events throughout the year.
+                events throughout the year.
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                Henderson: Family-Friendly Living
+                Henderson: Living
               </h3>
               <p className="text-gray-600 mb-4">
                 Henderson, Nevada's second-largest city, offers a perfect blend of suburban comfort
                 and urban convenience. Located just southeast of Las Vegas, Henderson has
-                consistently been ranked among the safest cities in America, making it an ideal
+                published its crime data online through Henderson Police, making it easy
                 choice for families. The city has invested heavily in parks, recreation facilities,
                 and community programs, creating an environment where families can thrive.
               </p>
@@ -490,7 +490,7 @@ export default function Neighborhoods() {
                 The city features over 60 parks, including the beautiful Lake Las Vegas area, which
                 offers resort-style living with a man-made lake, golf courses, and luxury amenities.
                 Henderson's Green Valley area is particularly popular, offering established
-                neighborhoods with mature landscaping, excellent schools, and convenient access to
+                neighborhoods with mature landscaping, nearby public schools, and convenient access to
                 shopping and dining.
               </p>
               <p className="text-gray-600">
@@ -508,7 +508,7 @@ export default function Neighborhoods() {
               <p className="text-gray-600 mb-4">
                 Green Valley, located within Henderson, represents one of the most established and
                 desirable communities in the Las Vegas area. Developed primarily in the 1980s and
-                1990s, Green Valley features mature neighborhoods with tree-lined streets,
+                1990s, Green Valley features older neighborhoods with tree-lined streets,
                 well-maintained homes, and a strong sense of community. The area has aged
                 gracefully, with property values that have consistently appreciated over the
                 decades.
@@ -522,7 +522,7 @@ export default function Neighborhoods() {
               </p>
               <p className="text-gray-600">
                 Green Valley's schools are highly rated, with many earning A and A+ ratings. The
-                area is particularly attractive to families seeking established neighborhoods with
+                area is particularly attractive to families seeking older neighborhoods with
                 proven track records for property values and quality of life. The mature landscaping
                 and community amenities create an environment that feels settled and permanent,
                 rather than newly developed.
