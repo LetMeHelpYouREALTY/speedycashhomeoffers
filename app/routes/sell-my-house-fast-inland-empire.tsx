@@ -278,7 +278,7 @@ export default function SellMyHouseFastInlandEmpire() {
                 </li>
                 <li>
                   • <strong>Educational Opportunities:</strong> Cal State San Bernardino and
-                  excellent public schools.
+                  nearby public schools.
                 </li>
                 <li>
                   • <strong>Job Market:</strong> Growing employment opportunities in multiple

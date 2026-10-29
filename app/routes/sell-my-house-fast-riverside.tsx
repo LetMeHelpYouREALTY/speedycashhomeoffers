@@ -240,7 +240,7 @@ export default function SellMyHouseFastRiverside() {
                 <li>• The county has a strong logistics and distribution sector.</li>
                 <li>• The median household income is around $70,000.</li>
                 <li>• Riverside County offers diverse landscapes from mountains to desert.</li>
-                <li>• The county has excellent schools and universities.</li>
+                <li>• The county has nearby public schools and universities.</li>
                 <li>• Major employers include Amazon, FedEx, and various logistics companies.</li>
                 <li>
                   • Riverside County has a diverse economy including agriculture, logistics, and

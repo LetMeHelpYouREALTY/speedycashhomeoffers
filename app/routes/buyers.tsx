@@ -447,20 +447,20 @@ export default function Buyers() {
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Summerlin</h3>
               <p className="text-gray-600 mb-4">
                 Summerlin is one of Las Vegas's most desirable master-planned communities, offering
-                beautiful homes, excellent schools, and abundant amenities. With golf courses,
+                beautiful homes, nearby public schools, and abundant amenities. With golf courses,
                 parks, shopping centers, and a strong sense of community, Summerlin appeals to
                 families and professionals seeking a high quality of life.
               </p>
               <p className="text-gray-600">
                 Average home prices range from $400,000 to over $1 million, with a mix of
                 single-family homes, townhomes, and luxury estates. The area features top-rated
-                schools, low crime rates, and easy access to the Las Vegas Strip and downtown.
+                schools, parks, and easy access to the Las Vegas Strip and downtown.
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Henderson</h3>
               <p className="text-gray-600 mb-4">
-                Henderson offers a family-friendly atmosphere with excellent schools, parks, and
+                Henderson offers a parks and community amenities with nearby schools, parks, and
                 recreational facilities. As Nevada's second-largest city, Henderson provides a
                 suburban feel while remaining close to Las Vegas employment centers and
                 entertainment.
@@ -474,16 +474,16 @@ export default function Buyers() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Green Valley</h3>
               <p className="text-gray-600 mb-4">
-                Green Valley is an established Henderson community known for mature neighborhoods,
+                Green Valley is an established Henderson community known for older neighborhoods,
                 tree-lined streets, and convenient location. The area offers a mix of older,
                 well-maintained homes and newer developments, providing options for various budgets
                 and preferences.
               </p>
               <p className="text-gray-600">
                 With home prices typically ranging from $350,000 to $600,000, Green Valley offers
-                excellent value. The area features good schools, shopping centers, and easy access
+                excellent value. The area features nearby public schools, shopping centers, and easy access
                 to major employment centers. It's particularly attractive to first-time buyers and
-                those seeking established neighborhoods.
+                those seeking older neighborhoods.
               </p>
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6">
@@ -504,7 +504,7 @@ export default function Buyers() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-3 text-gray-900">Southwest Las Vegas</h3>
               <p className="text-gray-600 mb-4">
-                Southwest Las Vegas offers a mix of established neighborhoods and newer
+                Southwest Las Vegas offers a mix of older neighborhoods and newer
                 developments, with good access to the Las Vegas Strip, McCarran Airport, and major
                 employment centers. The area features a variety of housing options from affordable
                 starter homes to luxury properties.
@@ -512,7 +512,7 @@ export default function Buyers() {
               <p className="text-gray-600">
                 Home prices range from $300,000 to $700,000, with many options for different
                 budgets. The area is popular with professionals working on or near the Strip, as
-                well as families seeking good schools and convenient amenities. Southwest Las Vegas
+                well as buyers seeking nearby schools and convenient amenities. Southwest Las Vegas
                 offers good value and strong potential for appreciation.
               </p>
             </div>
@@ -526,7 +526,7 @@ export default function Buyers() {
               </p>
               <p className="text-gray-600">
                 Home prices range from $200,000 for condos to over $500,000 for luxury lofts and
-                renovated homes. Downtown appeals to young professionals, empty nesters, and those
+                renovated homes. Downtown appeals to professionals, downsizers, and those
                 seeking a vibrant urban lifestyle. The area offers unique character and strong
                 potential for appreciation as development continues.
               </p>

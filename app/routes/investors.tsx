@@ -403,7 +403,7 @@ export default function Investors() {
                   Las Vegas offers strong rental yields compared to many other major markets.
                   Average cap rates typically range from 7-9%, providing investors with solid cash
                   flow potential. The rental market is supported by a large population of renters,
-                  including young professionals, families, and retirees attracted to the area's
+                  including professionals, families, and retirees attracted to the area's
                   lifestyle and affordability.
                 </p>
                 <p className="text-gray-600">
@@ -425,7 +425,7 @@ export default function Investors() {
                   economic development, and limited new construction in many desirable areas.
                 </p>
                 <p className="text-gray-600">
-                  Investors who purchase properties in well-located areas with good schools,
+                  Investors who purchase properties in well-located areas with nearby public schools,
                   amenities, and employment access can expect both strong cash flow and long-term
                   appreciation. Dr. Duffy's deep market knowledge helps investors identify
                   neighborhoods with the best appreciation potential, ensuring their investments
