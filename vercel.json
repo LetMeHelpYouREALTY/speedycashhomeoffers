@@ -1,16 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/buyer-investor/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
-      "source": "/map/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
       "source": "/home/:path*",
       "destination": "/",
       "permanent": true
@@ -18,31 +8,6 @@
     {
       "source": "/for-buyers/:path*",
       "destination": "/buyers",
-      "permanent": true
-    },
-    {
-      "source": "/writer/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
-      "source": "/author/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
-      "source": "/tag/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
-      "source": "/category/:path*",
-      "destination": "/404",
-      "permanent": true
-    },
-    {
-      "source": "/__manifest",
-      "destination": "/404",
       "permanent": true
     },
     {

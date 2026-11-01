@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { data, Link } from "react-router";
 import type { Route } from "./+types/404";
 
 export function meta({ params, data }: Route.MetaArgs) {
@@ -43,10 +43,8 @@ export const loader = async ({ request }: { request: Request }) => {
     });
   }
 
-  // Return data for regular 404 - component will render
-  return {
-    status: 404,
-  };
+  // Render the not-found page with a real 404 status (not a soft 404 with 200)
+  return data({ status: 404 }, { status: 404 });
 };
 
 export default function NotFound() {
